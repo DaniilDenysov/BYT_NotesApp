@@ -1,6 +1,6 @@
 namespace NotesApp;
 
-public class Tag : IReversible<Tag>
+public class Tag : IReversible<Tag>, IDisposable
 {
     public string Guid { get; private set; }
     public string Name { get; private set; }
@@ -11,6 +11,8 @@ public class Tag : IReversible<Tag>
         Guid = guid == "" ? System.Guid.NewGuid().ToString() : guid;
         Name = name;
         Description = description;
+
+        ObjectManager.addObject(this);
     }
 
     public Tag(Tag tag)
@@ -18,10 +20,17 @@ public class Tag : IReversible<Tag>
         Guid = tag.Guid;
         Name = tag.Name;
         Description = tag.Description;
+        ObjectManager.addObject(this);
     }
     
     public Tag Clone()
     {
         return new Tag(this);
+    }
+
+    public void Dispose()
+    {
+        ObjectManager.removeObj(this);
+        GC.SuppressFinalize(this);
     }
 }
