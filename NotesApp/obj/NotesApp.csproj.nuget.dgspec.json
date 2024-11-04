@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Midori no Hikari\\Source\\Repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj": {}
+    "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Midori no Hikari\\Source\\Repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj": {
+    "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Midori no Hikari\\Source\\Repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj",
+        "projectUniqueName": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj",
         "projectName": "NotesApp",
-        "projectPath": "C:\\Users\\Midori no Hikari\\Source\\Repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj",
+        "projectPath": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj",
         "packagesPath": "C:\\Users\\Midori no Hikari\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Midori no Hikari\\Source\\Repos\\BYT_NotesApp\\NotesApp\\obj\\",
+        "outputPath": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Midori no Hikari\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -11,6 +11,14 @@ public static class ObjectManager
     public static List<Note> AllNotes { get => allNotes; }
     public static List<NotesCategory> NotesCategories { get => notesCategories; }
 
+    public static void init(List<Tag> tags, List<TagsCategory> tc, List<Note> notes, List<NotesCategory> nc)
+    {
+        allTags = tags;
+        tagsCategories = tc;
+        allNotes = notes;
+        notesCategories = nc;
+    }
+
     public static void addObject<T> (T t)
     {
         if(t is Tag tag)
