@@ -13,3 +13,18 @@ C:\Users\Midori no Hikari\Source\Repos\BYT_NotesApp\NotesApp\obj\Debug\net8.0\re
 C:\Users\Midori no Hikari\Source\Repos\BYT_NotesApp\NotesApp\obj\Debug\net8.0\NotesApp.pdb
 C:\Users\Midori no Hikari\Source\Repos\BYT_NotesApp\NotesApp\obj\Debug\net8.0\NotesApp.genruntimeconfig.cache
 C:\Users\Midori no Hikari\Source\Repos\BYT_NotesApp\NotesApp\obj\Debug\net8.0\ref\NotesApp.dll
+C:\Users\Aleks\Source\Repos\BYT_NotesApp1\NotesApp\obj\Debug\net8.0\NotesApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aleks\Source\Repos\BYT_NotesApp1\NotesApp\obj\Debug\net8.0\NotesApp.AssemblyInfoInputs.cache
+C:\Users\Aleks\Source\Repos\BYT_NotesApp1\NotesApp\obj\Debug\net8.0\NotesApp.AssemblyInfo.cs
+C:\Users\Aleks\Source\Repos\BYT_NotesApp1\NotesApp\obj\Debug\net8.0\NotesApp.csproj.CoreCompileInputs.cache
+C:\Users\Aleks\Source\Repos\BYT_NotesApp1\NotesApp\obj\Debug\net8.0\NotesApp.sourcelink.json
+C:\Users\Aleks\Source\Repos\BYT_NotesApp1\NotesApp\obj\Debug\net8.0\NotesApp.dll
+C:\Users\Aleks\Source\Repos\BYT_NotesApp1\NotesApp\obj\Debug\net8.0\refint\NotesApp.dll
+C:\Users\Aleks\Source\Repos\BYT_NotesApp1\NotesApp\obj\Debug\net8.0\NotesApp.pdb
+C:\Users\Aleks\Source\Repos\BYT_NotesApp1\NotesApp\bin\Debug\net8.0\NotesApp.exe
+C:\Users\Aleks\Source\Repos\BYT_NotesApp1\NotesApp\bin\Debug\net8.0\NotesApp.deps.json
+C:\Users\Aleks\Source\Repos\BYT_NotesApp1\NotesApp\bin\Debug\net8.0\NotesApp.runtimeconfig.json
+C:\Users\Aleks\Source\Repos\BYT_NotesApp1\NotesApp\bin\Debug\net8.0\NotesApp.dll
+C:\Users\Aleks\Source\Repos\BYT_NotesApp1\NotesApp\bin\Debug\net8.0\NotesApp.pdb
+C:\Users\Aleks\Source\Repos\BYT_NotesApp1\NotesApp\obj\Debug\net8.0\NotesApp.genruntimeconfig.cache
+C:\Users\Aleks\Source\Repos\BYT_NotesApp1\NotesApp\obj\Debug\net8.0\ref\NotesApp.dll

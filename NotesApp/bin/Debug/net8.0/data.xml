@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataContainer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Tags />
+  <TagsCategories />
+  <Notes>
+    <Note>
+      <Guid>4afbdfc2-4ae5-4491-8749-a80293576889</Guid>
+      <Priority>0</Priority>
+      <LastModificationDate>2024-11-05T20:28:18.4240997+01:00</LastModificationDate>
+      <CreationDate>2024-11-05T20:28:18.4279906+01:00</CreationDate>
+      <Title>Numero uno</Title>
+      <Content>Hi there</Content>
+    </Note>
+    <Note>
+      <Guid>ac9f8234-d184-4b3c-b5e5-a976cf83bdb4</Guid>
+      <Priority>0</Priority>
+      <LastModificationDate>2024-11-05T20:28:18.4285075+01:00</LastModificationDate>
+      <CreationDate>2024-11-05T20:28:18.4285091+01:00</CreationDate>
+      <Title>Numero dwa</Title>
+      <Content>Hi there2</Content>
+    </Note>
+  </Notes>
+  <NotesCategories />
+</DataContainer>

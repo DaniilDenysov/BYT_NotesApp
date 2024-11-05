@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Midori no Hikari\\.nuget\\packages\\": {}
+    "C:\\Users\\Aleks\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Midori no Hikari\\Source\\Repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj",
+      "projectUniqueName": "C:\\Users\\Aleks\\Source\\Repos\\BYT_NotesApp1\\NotesApp\\NotesApp.csproj",
       "projectName": "NotesApp",
-      "projectPath": "C:\\Users\\Midori no Hikari\\Source\\Repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj",
-      "packagesPath": "C:\\Users\\Midori no Hikari\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Midori no Hikari\\Source\\Repos\\BYT_NotesApp\\NotesApp\\obj\\",
+      "projectPath": "C:\\Users\\Aleks\\Source\\Repos\\BYT_NotesApp1\\NotesApp\\NotesApp.csproj",
+      "packagesPath": "C:\\Users\\Aleks\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aleks\\Source\\Repos\\BYT_NotesApp1\\NotesApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Midori no Hikari\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aleks\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -66,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

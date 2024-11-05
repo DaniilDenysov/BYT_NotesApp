@@ -2,9 +2,9 @@
 using NotesApp;
 
 Console.WriteLine("Hello, World!");
-
-Note n = new Note("Numero uno", "Hi there");
-Note n2 = new Note("Numero dwa", "Hi there2");
+SerializationUtility.LoadAll();
+//Note n = new Note("Numero uno", "Hi there");
+//Note n2 = new Note("Numero dwa", "Hi there2");
 List<Note> list = ObjectManager.AllNotes;
 
 using (var n3 = new Note("Nvm", "i should disappear"))
@@ -16,3 +16,4 @@ using (var n3 = new Note("Nvm", "i should disappear"))
 }
 Console.WriteLine();
 foreach (var item in list) Console.WriteLine(item);
+SerializationUtility.SaveAll();

@@ -2,10 +2,10 @@ namespace NotesApp;
 
 public abstract class Category<T> : IReversible<Category<T>>
 {
-    public string Guid { get; private set; }
-    public string Title { get; private set; }
-    public string? Description  { get; private set; }
-    public List<T> Items { get; private set; }
+    public string Guid { get;  set; }
+    public string Title { get;  set; }
+    public string? Description  { get;  set; }
+    public List<T> Items { get;  set; }
 
     protected Category(string title, string description = "")
     {
@@ -13,6 +13,12 @@ public abstract class Category<T> : IReversible<Category<T>>
         Title = title;
         Description = description;
         Items = new List<T>();
+    }
+
+    protected Category()
+    {
+        Title = string.Empty;
+        Description = string.Empty;
     }
 
     protected Category(Category<T> category)

@@ -2,9 +2,9 @@ namespace NotesApp;
 
 public class Tag : IReversible<Tag>, IDisposable
 {
-    public string Guid { get; private set; }
-    public string Name { get; private set; }
-    public string? Description { get; private set; }
+    public string Guid { get;  set; }
+    public string Name { get;  set; }
+    public string? Description { get;  set; }
 
     public Tag(string name, string description = "", string guid = "")
     {
@@ -13,6 +13,13 @@ public class Tag : IReversible<Tag>, IDisposable
         Description = description;
 
         ObjectManager.addObject(this);
+    }
+
+    public Tag()
+    {
+        Guid = System.Guid.NewGuid().ToString();
+        Name = string.Empty;
+        Description = string.Empty;
     }
 
     public Tag(Tag tag)

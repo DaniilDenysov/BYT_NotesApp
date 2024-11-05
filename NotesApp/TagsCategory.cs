@@ -7,6 +7,11 @@ public class TagsCategory : Category<Tag>, IDisposable
         ObjectManager.addObject(this);
     }
 
+    public TagsCategory() : base(string.Empty) 
+    {
+        ObjectManager.addObject(this);
+    }
+
     public TagsCategory(Category<Tag> category) : base(category)
     {
         ObjectManager.addObject(this);

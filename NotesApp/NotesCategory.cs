@@ -12,6 +12,12 @@ public class NotesCategory : Category<Note>, IDisposable
         ObjectManager.addObject(this);
     }
 
+    public NotesCategory()
+        : base(string.Empty, string.Empty) 
+    {
+        ObjectManager.addObject(this);
+    }
+
     public override int GetPriority()
     {
         return 1;
