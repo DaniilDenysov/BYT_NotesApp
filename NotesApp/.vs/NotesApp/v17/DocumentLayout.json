@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\aleks\\source\\repos\\byt_notesapp1\\notesapp\\serializationutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:serializationutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\aleks\\source\\repos\\byt_notesapp1\\notesapp\\data.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:data.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\aleks\\source\\repos\\byt_notesapp1\\notesapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\aleks\\source\\repos\\byt_notesapp1\\notesapp\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\aleks\\source\\repos\\byt_notesapp1\\notesapp\\tagscategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:tagscategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\aleks\\source\\repos\\byt_notesapp1\\notesapp\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\aleks\\source\\repos\\byt_notesapp1\\notesapp\\notescategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:notescategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\aleks\\source\\repos\\byt_notesapp1\\notesapp\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\aleks\\source\\repos\\byt_notesapp1\\notesapp\\objectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:objectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "data.xml",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\data.xml",
+              "RelativeDocumentMoniker": "data.xml",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\data.xml",
+              "RelativeToolTip": "data.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-11-05T19:28:13.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NotesCategory.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\NotesCategory.cs",
+              "RelativeDocumentMoniker": "NotesCategory.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\NotesCategory.cs",
+              "RelativeToolTip": "NotesCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:23:09.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Note.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\Note.cs",
+              "RelativeDocumentMoniker": "Note.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\Note.cs",
+              "RelativeToolTip": "Note.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwAsAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:21:56.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\Category.cs",
+              "RelativeDocumentMoniker": "Category.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\Category.cs",
+              "RelativeToolTip": "Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:18:51.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TagsCategory.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\TagsCategory.cs",
+              "RelativeDocumentMoniker": "TagsCategory.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\TagsCategory.cs",
+              "RelativeToolTip": "TagsCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:18:04.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Tag.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\Tag.cs",
+              "RelativeDocumentMoniker": "Tag.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\Tag.cs",
+              "RelativeToolTip": "Tag.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:16:35.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:15:51.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SerializationUtility.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\SerializationUtility.cs",
+              "RelativeDocumentMoniker": "SerializationUtility.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\SerializationUtility.cs*",
+              "RelativeToolTip": "SerializationUtility.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:14:50.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ObjectManager.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\ObjectManager.cs",
+              "RelativeDocumentMoniker": "ObjectManager.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp1\\NotesApp\\ObjectManager.cs",
+              "RelativeToolTip": "ObjectManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:14:48.758Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
