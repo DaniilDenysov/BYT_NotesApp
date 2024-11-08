@@ -32,4 +32,9 @@ public class TagsCategory : Category<Tag>, IDisposable
         ObjectManager.removeObj(this);
         GC.SuppressFinalize(this);
     }
+
+    ~TagsCategory()
+    {
+        ObjectManager.removeObj(this);
+    }
 }

@@ -59,4 +59,8 @@ public class Note : IReversible<Note>, IDisposable
         GC.SuppressFinalize(this);
     }
 
+    ~Note()
+    {
+        ObjectManager.removeObj(this);
+    }
 }

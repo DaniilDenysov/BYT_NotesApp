@@ -40,4 +40,9 @@ public class Tag : IReversible<Tag>, IDisposable
         ObjectManager.removeObj(this);
         GC.SuppressFinalize(this);
     }
+
+    ~Tag()
+    {
+        ObjectManager.removeObj(this);
+    }
 }

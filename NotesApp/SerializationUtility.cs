@@ -22,6 +22,7 @@ public static class SerializationUtility
     {
         DataContainer data = Deserialize<DataContainer>(DataFile) ?? new DataContainer();
 
+
         ObjectManager.init(
             data.Tags,
             data.TagsCategories,

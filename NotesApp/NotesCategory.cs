@@ -33,4 +33,9 @@ public class NotesCategory : Category<Note>, IDisposable
         ObjectManager.removeObj(this);
         GC.SuppressFinalize(this);
     }
+
+    ~NotesCategory()
+    {
+        ObjectManager.removeObj(this);
+    }
 }
