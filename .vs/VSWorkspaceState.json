@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\NotesApp"
   ],
-  "SelectedNode": "\\NotesApp.sln",
+  "SelectedNode": "\\NotesApp\\SerializationUtility.cs",
   "PreviewInSolutionExplorer": false
 }

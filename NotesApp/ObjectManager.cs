@@ -4,14 +4,14 @@ namespace NotesApp;
 public static class ObjectManager
 {
 
-    private static List<IDisposable> objects = new List<IDisposable>();
+    private static List<Object> objects = new List<Object>();
 
-    public static void init(List<IDisposable> d)
+    public static void init(List<Object> d)
     {
         objects = d;
     }
 
-    public static IReadOnlyList<IDisposable> getAllData()
+    public static IReadOnlyList<Object> getAllData()
     {
         return objects.AsReadOnly();
     }

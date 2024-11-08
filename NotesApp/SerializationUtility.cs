@@ -1,19 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Xml.Serialization;
-
-namespace NotesApp;
+using NotesApp;
 
 public static class SerializationUtility
 {
-    private static readonly string DataFile = "data.xml";
+    private static readonly string DataFile = "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\data.xml";
 
     public static void SaveAll()
     {
         DataContainer data = new DataContainer
         {
-            Tags = ObjectManager.AllTags,
-            TagsCategories = ObjectManager.TagsCategories,
-            Notes = ObjectManager.AllNotes,
-            NotesCategories = ObjectManager.NotesCategories
+            Objects = ObjectManager.getAllData().ToList()  
         };
         Serialize(data, DataFile);
     }
@@ -22,14 +22,19 @@ public static class SerializationUtility
     {
         DataContainer data = Deserialize<DataContainer>(DataFile) ?? new DataContainer();
 
+        if (data.Objects.Count == 0)
+        {
+            Console.WriteLine("No objects loaded from the XML file.");
+        }
+        else
+        {
+            Console.WriteLine($"Loaded {data.Objects.Count} objects.");
+            ObjectManager.init(data.Objects);
+        }
 
-        ObjectManager.init(
-            data.Tags,
-            data.TagsCategories,
-            data.Notes,
-            data.NotesCategories
-        );
+        Console.WriteLine("Deserialization completed.");
     }
+
 
     private static void Serialize<T>(T data, string filePath)
     {
@@ -45,19 +50,33 @@ public static class SerializationUtility
     {
         if (!File.Exists(filePath)) return null;
 
-        XmlSerializer serializer = new XmlSerializer(typeof(T));
-        using (StreamReader reader = new StreamReader(filePath))
+        try
         {
-            return (T?)serializer.Deserialize(reader);
+            XmlSerializer serializer = new XmlSerializer(typeof(T));
+            using (StreamReader reader = new StreamReader(filePath))
+            {
+                return (T?)serializer.Deserialize(reader);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Deserialization error: " + ex.Message);
+            return null;
         }
     }
+
 }
 
+
+
 [Serializable]
+[XmlInclude(typeof(Tag))]
+[XmlInclude(typeof(TagsCategory))]
+[XmlInclude(typeof(Note))]
+[XmlInclude(typeof(NotesCategory))]
 public class DataContainer
 {
-    public List<Tag> Tags { get; set; } = new List<Tag>();
-    public List<TagsCategory> TagsCategories { get; set; } = new List<TagsCategory>();
-    public List<Note> Notes { get; set; } = new List<Note>();
-    public List<NotesCategory> NotesCategories { get; set; } = new List<NotesCategory>();
+    [XmlArray("Objects")]
+    [XmlArrayItem("Object")]
+    public List<Object> Objects { get; set; } = new List<Object>();
 }

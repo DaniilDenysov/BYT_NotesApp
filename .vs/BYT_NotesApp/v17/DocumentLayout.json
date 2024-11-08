@@ -1,12 +1,276 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotesApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\SerializationUtility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotesApp\\SerializationUtility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\data.xml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotesApp\\data.xml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\ObjectManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotesApp\\ObjectManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotesApp\\NotesApp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\Note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotesApp\\Note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\ModifyTag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotesApp\\ModifyTag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\ModifyNote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotesApp\\ModifyNote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\ModifyCategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotesApp\\ModifyCategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\IReversible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotesApp\\IReversible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\NotesCategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotesApp\\NotesCategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\QuickAccessCategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotesApp\\QuickAccessCategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\CommandPipeLine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotesApp\\CommandPipeLine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\Tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotesApp\\Tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\TagsCategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotesApp\\TagsCategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NotesApp.csproj",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj",
+              "RelativeDocumentMoniker": "NotesApp\\NotesApp.csproj",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj",
+              "RelativeToolTip": "NotesApp\\NotesApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-08T20:01:51.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ModifyTag.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\ModifyTag.cs",
+              "RelativeDocumentMoniker": "NotesApp\\ModifyTag.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\ModifyTag.cs",
+              "RelativeToolTip": "NotesApp\\ModifyTag.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T20:01:50.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ModifyNote.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\ModifyNote.cs",
+              "RelativeDocumentMoniker": "NotesApp\\ModifyNote.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\ModifyNote.cs",
+              "RelativeToolTip": "NotesApp\\ModifyNote.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T20:01:47.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ModifyCategory.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\ModifyCategory.cs",
+              "RelativeDocumentMoniker": "NotesApp\\ModifyCategory.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\ModifyCategory.cs",
+              "RelativeToolTip": "NotesApp\\ModifyCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T20:01:45.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IReversible.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\IReversible.cs",
+              "RelativeDocumentMoniker": "NotesApp\\IReversible.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\IReversible.cs",
+              "RelativeToolTip": "NotesApp\\IReversible.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T20:01:45.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "data.xml",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\data.xml",
+              "RelativeDocumentMoniker": "NotesApp\\data.xml",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\data.xml",
+              "RelativeToolTip": "NotesApp\\data.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-11-08T19:46:48.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CommandPipeLine.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\CommandPipeLine.cs",
+              "RelativeDocumentMoniker": "NotesApp\\CommandPipeLine.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\CommandPipeLine.cs",
+              "RelativeToolTip": "NotesApp\\CommandPipeLine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T19:18:35.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\Program.cs",
+              "RelativeDocumentMoniker": "NotesApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\Program.cs",
+              "RelativeToolTip": "NotesApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T18:52:53.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ObjectManager.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\ObjectManager.cs",
+              "RelativeDocumentMoniker": "NotesApp\\ObjectManager.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\ObjectManager.cs",
+              "RelativeToolTip": "NotesApp\\ObjectManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T18:41:42.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SerializationUtility.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\SerializationUtility.cs",
+              "RelativeDocumentMoniker": "NotesApp\\SerializationUtility.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\SerializationUtility.cs",
+              "RelativeToolTip": "NotesApp\\SerializationUtility.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAA8AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T13:16:12.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NotesCategory.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\NotesCategory.cs",
+              "RelativeDocumentMoniker": "NotesApp\\NotesCategory.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\NotesCategory.cs",
+              "RelativeToolTip": "NotesApp\\NotesCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:06:39.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Note.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\Note.cs",
+              "RelativeDocumentMoniker": "NotesApp\\Note.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\Note.cs",
+              "RelativeToolTip": "NotesApp\\Note.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:06:23.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "QuickAccessCategory.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\QuickAccessCategory.cs",
+              "RelativeDocumentMoniker": "NotesApp\\QuickAccessCategory.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\QuickAccessCategory.cs",
+              "RelativeToolTip": "NotesApp\\QuickAccessCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T19:56:16.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TagsCategory.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\TagsCategory.cs",
+              "RelativeDocumentMoniker": "NotesApp\\TagsCategory.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\TagsCategory.cs",
+              "RelativeToolTip": "NotesApp\\TagsCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:06:12.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Tag.cs",
+              "DocumentMoniker": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\Tag.cs",
+              "RelativeDocumentMoniker": "NotesApp\\Tag.cs",
+              "ToolTip": "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\Tag.cs",
+              "RelativeToolTip": "NotesApp\\Tag.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAYAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:06:04.47Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
