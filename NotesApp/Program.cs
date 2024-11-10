@@ -14,3 +14,4 @@ Console.WriteLine();
 foreach (var item in list) Console.WriteLine(item);
 SerializationUtility.SaveAll(path);
 Console.Read();
+
