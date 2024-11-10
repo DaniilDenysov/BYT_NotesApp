@@ -2,7 +2,7 @@ using System;
 using System.IO;
 namespace NotesApp;
 
-public class Note : IReversible<Note>, IDisposable
+public class Note : IDisposable
 {
     public string Guid { get;  set; }
     public uint Priority { get;  set; }
@@ -19,7 +19,7 @@ public class Note : IReversible<Note>, IDisposable
         Title = title;
         Content = content;
         Priority = 0;
-        ObjectManager.addObject(this);
+        ObjectManager.AddObject(this);
     }
 
     public Note()
@@ -39,15 +39,9 @@ public class Note : IReversible<Note>, IDisposable
         CreationDate = note.CreationDate;
         Title = note.Title;
         Content = note.Content;
-        ObjectManager.addObject(this);
+        ObjectManager.AddObject(this);
     }
     
-    
-    public Note Clone()
-    {
-        return new Note(this);
-    }
-
     public override string ToString()
     {
         return "Title: " + Title + "; Content: " + Content;
@@ -55,12 +49,30 @@ public class Note : IReversible<Note>, IDisposable
 
     public void Dispose()
     {
-        ObjectManager.removeObj(this);
+        ObjectManager.RemoveObj(this);
         GC.SuppressFinalize(this);
+    }
+    
+    public static bool operator== (Note left, Note right)
+    {
+        if (ReferenceEquals(left, right)) return true;
+        if (left is null || right is null) return false;
+        
+        return left.Guid == right.Guid &&
+               left.Title == right.Title &&
+               left.Content == right.Content && 
+               left.CreationDate == right.CreationDate &&
+               left.LastModificationDate == right.LastModificationDate &&
+               left.Priority == right.Priority;
+    }
+    
+    public static bool operator!= (Note left, Note right)
+    {
+        return !(left == right);
     }
 
     ~Note()
     {
-        ObjectManager.removeObj(this);
+        ObjectManager.RemoveObj(this);
     }
 }

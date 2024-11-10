@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tag xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Guid>83f961c2-73b0-4fba-8276-700c7e3c6c89</Guid>
+  <Name>SampleTag</Name>
+  <Description>A sample tag for testing</Description>
+</Tag>

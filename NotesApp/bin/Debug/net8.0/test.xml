@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataContainer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Objects>
+    <Object xsi:type="Note">
+      <Guid>b587d503-f1d0-4be3-9883-5d10ddae42f1</Guid>
+      <Priority>0</Priority>
+      <LastModificationDate>2024-11-10T18:08:12.762142+01:00</LastModificationDate>
+      <CreationDate>2024-11-10T18:08:12.7621937+01:00</CreationDate>
+      <Title>Note1</Title>
+      <Content>Hello</Content>
+    </Object>
+    <Object xsi:type="Note">
+      <Guid>3b021ba1-8025-4fe1-b87f-5e9121eb5e54</Guid>
+      <Priority>0</Priority>
+      <LastModificationDate>2024-11-10T18:08:12.7624649+01:00</LastModificationDate>
+      <CreationDate>2024-11-10T18:08:12.762467+01:00</CreationDate>
+      <Title>Note2</Title>
+      <Content>World</Content>
+    </Object>
+  </Objects>
+</DataContainer>

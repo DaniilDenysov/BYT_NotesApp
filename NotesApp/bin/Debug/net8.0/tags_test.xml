@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TagsCategory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Guid>8578ecab-4d95-41fc-a9a1-4086b151ded1</Guid>
+  <Title>Category1</Title>
+  <Description>First tag category</Description>
+  <Items>
+    <Tag>
+      <Guid>40859de3-49c8-4c44-a459-d4c338d2db39</Guid>
+      <Name>Tag1</Name>
+      <Description>Description1</Description>
+    </Tag>
+    <Tag>
+      <Guid>bdc9a915-4881-4328-b5ff-33e9e00cd16c</Guid>
+      <Name>Tag2</Name>
+      <Description>Description2</Description>
+    </Tag>
+  </Items>
+</TagsCategory>

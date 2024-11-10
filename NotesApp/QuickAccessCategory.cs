@@ -14,9 +14,4 @@ public class QuickAccessCategory : Category<Note>
     {
         return 0;
     }
-
-    public override Category<Note> Clone()
-    {
-        return new QuickAccessCategory(this);
-    }
 }

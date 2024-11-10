@@ -1,6 +1,6 @@
 namespace NotesApp;
 
-public abstract class Category<T> : IReversible<Category<T>>
+public abstract class Category<T>
 {
     public string Guid { get;  set; }
     public string Title { get;  set; }
@@ -42,6 +42,4 @@ public abstract class Category<T> : IReversible<Category<T>>
     }
 
     public virtual List<T> GetItems() => Items;
-
-    public abstract Category<T> Clone();
 }

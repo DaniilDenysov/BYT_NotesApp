@@ -7,20 +7,18 @@ using NotesApp;
 
 public static class SerializationUtility
 {
-    private static readonly string DataFile = "C:\\Users\\Aleks\\source\\repos\\BYT_NotesApp\\NotesApp\\data.xml";
-
-    public static void SaveAll()
+    public static void SaveAll(string dataFile)
     {
         DataContainer data = new DataContainer
         {
-            Objects = ObjectManager.getAllData().ToList()  
+            Objects = ObjectManager.GetAllData().ToList()  
         };
-        Serialize(data, DataFile);
+        Serialize(data, dataFile);
     }
 
-    public static void LoadAll()
+    public static void LoadAll(string dataFile)
     {
-        DataContainer data = Deserialize<DataContainer>(DataFile) ?? new DataContainer();
+        DataContainer data = Deserialize<DataContainer>(dataFile) ?? new DataContainer();
 
         if (data.Objects.Count == 0)
         {
@@ -29,14 +27,14 @@ public static class SerializationUtility
         else
         {
             Console.WriteLine($"Loaded {data.Objects.Count} objects.");
-            ObjectManager.init(data.Objects);
+            ObjectManager.Init(data.Objects);
         }
 
         Console.WriteLine("Deserialization completed.");
     }
 
 
-    private static void Serialize<T>(T data, string filePath)
+    public static void Serialize<T>(T data, string filePath)
     {
         XmlSerializer serializer = new XmlSerializer(typeof(T));
         using (StreamWriter writer = new StreamWriter(filePath))
@@ -46,7 +44,7 @@ public static class SerializationUtility
         }
     }
 
-    private static T? Deserialize<T>(string filePath) where T : class
+    public static T? Deserialize<T>(string filePath) where T : class
     {
         if (!File.Exists(filePath)) return null;
 

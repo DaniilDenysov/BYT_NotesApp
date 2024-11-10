@@ -6,23 +6,25 @@ public static class ObjectManager
 
     private static List<Object> objects = new List<Object>();
 
-    public static void init(List<Object> d)
+    public static void Init(List<Object> d)
     {
         objects = d;
     }
 
-    public static IReadOnlyList<Object> getAllData()
+    public static IReadOnlyList<Object> GetAllData()
     {
         return objects.AsReadOnly();
     }
 
-    public static void addObject(IDisposable d)
+    public static void AddObject<T>(T d)
     {
+        if (d == null) return;
         objects.Add(d);
     }
 
-    public static void removeObj(IDisposable d)
+    public static void RemoveObj<T>(T d)
     {
+        if (d == null) return;
         objects.Remove(d);
     }
 }

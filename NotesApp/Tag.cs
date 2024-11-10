@@ -1,6 +1,6 @@
 namespace NotesApp;
 
-public class Tag : IReversible<Tag>, IDisposable
+public class Tag : IDisposable
 {
     public string Guid { get;  set; }
     public string Name { get;  set; }
@@ -12,7 +12,7 @@ public class Tag : IReversible<Tag>, IDisposable
         Name = name;
         Description = description;
 
-        ObjectManager.addObject(this);
+        ObjectManager.AddObject(this);
     }
 
     public Tag()
@@ -27,7 +27,7 @@ public class Tag : IReversible<Tag>, IDisposable
         Guid = tag.Guid;
         Name = tag.Name;
         Description = tag.Description;
-        ObjectManager.addObject(this);
+        ObjectManager.AddObject(this);
     }
     
     public Tag Clone()
@@ -37,12 +37,27 @@ public class Tag : IReversible<Tag>, IDisposable
 
     public void Dispose()
     {
-        ObjectManager.removeObj(this);
+        ObjectManager.RemoveObj(this);
         GC.SuppressFinalize(this);
     }
 
+    public static bool operator== (Tag left, Tag right)
+    {
+        if (ReferenceEquals(left, right)) return true;
+        if (left is null || right is null) return false;
+        
+        return left.Guid == right.Guid &&
+               left.Description == right.Description &&
+               left.Name == right.Name;
+    }
+    
+    public static bool operator!= (Tag left, Tag right)
+    {
+        return !(left == right);
+    }
+    
     ~Tag()
     {
-        ObjectManager.removeObj(this);
+        ObjectManager.RemoveObj(this);
     }
 }
