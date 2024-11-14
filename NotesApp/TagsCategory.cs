@@ -4,17 +4,17 @@ public class TagsCategory : Category<Tag>, IDisposable
 {
     public TagsCategory(string title, string description = "") : base(title, description)
     {
-        ObjectManager.AddObject(this);
+        ObjectManager.Instance.AddObject(this);
     }
 
     public TagsCategory() : base(string.Empty) 
     {
-        ObjectManager.AddObject(this);
+        ObjectManager.Instance.AddObject(this);
     }
 
     public TagsCategory(Category<Tag> category) : base(category)
     {
-        ObjectManager.AddObject(this);
+        ObjectManager.Instance.AddObject(this);
     }
 
     public override int GetPriority()
@@ -24,12 +24,12 @@ public class TagsCategory : Category<Tag>, IDisposable
     
     public void Dispose()
     {
-        ObjectManager.RemoveObj(this);
+        ObjectManager.Instance.RemoveObj(this);
         GC.SuppressFinalize(this);
     }
 
     ~TagsCategory()
     {
-        ObjectManager.RemoveObj(this);
+        ObjectManager.Instance.RemoveObj(this);
     }
 }

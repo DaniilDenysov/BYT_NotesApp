@@ -4,7 +4,7 @@ using NotesApp;
 string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data.xml");
 SerializationUtility.LoadAll(path);
 
-IReadOnlyList<Object> list = ObjectManager.GetAllData();
+IReadOnlyList<Object> list = ObjectManager.Instance.GetAllData();
 Note n3 = new Note("nvm", "I should disappear");
 
 Console.WriteLine();

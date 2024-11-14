@@ -119,14 +119,15 @@ public class SerializationTests
         {
             File.Delete(path);
         }
-        
+        ObjectManager.Instance.ClearAll();
         Note serializedNote1 = new Note("Note1","Hello",Guid.NewGuid().ToString());
         Note serializedNote2 = new Note("Note2","World",Guid.NewGuid().ToString());
         SerializationUtility.SaveAll(path);
 
         SerializationUtility.LoadAll(path);
 
-        IReadOnlyList<Object> objects = ObjectManager.GetAllData();
+        IReadOnlyList<Object> objects = ObjectManager.Instance.GetAllData();
+        Assert.Equal(objects.Count, 2);
         Assert.True(objects[0] as Note == serializedNote1);
         Assert.True(objects[1] as Note == serializedNote2);
     }
@@ -134,6 +135,7 @@ public class SerializationTests
     [Fact]
     public void ObjectManager_CreateNote_CreateTag_CreateCategories()
     {
+        ObjectManager.Instance.ClearAll();
         Note note1 = new Note("First note");
         Note note2 = new Note("Second note");
         Tag tag1 = new Tag("First tag");
@@ -142,13 +144,13 @@ public class SerializationTests
         NotesCategory notesCategory = new NotesCategory("The great notes category");
 
 
-        IReadOnlyList<Object> objects = ObjectManager.GetAllData();
+        IReadOnlyList<Object> objects = ObjectManager.Instance.GetAllData();
 
         Assert.True(objects[0] as Note == note1);
-        Assert.True(objects[2] as Note == note2);
-        Assert.True(objects[3] as Tag == tag1);
-        Assert.True(objects[4] as Tag == tag2);
-        Assert.True(objects[5] as TagsCategory == tagsCategory);
-        Assert.True(objects[6] as NotesCategory == notesCategory);
+        Assert.True(objects[1] as Note == note2);
+        Assert.True(objects[2] as Tag == tag1);
+        Assert.True(objects[3] as Tag == tag2);
+        Assert.True(objects[4] as TagsCategory == tagsCategory);
+        Assert.True(objects[5] as NotesCategory == notesCategory);
     }
 }

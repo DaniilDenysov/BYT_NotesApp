@@ -12,7 +12,7 @@ public class Tag : IDisposable
         Name = name;
         Description = description;
 
-        ObjectManager.AddObject(this);
+        ObjectManager.Instance.AddObject(this);
     }
 
     public Tag()
@@ -27,7 +27,7 @@ public class Tag : IDisposable
         Guid = tag.Guid;
         Name = tag.Name;
         Description = tag.Description;
-        ObjectManager.AddObject(this);
+        ObjectManager.Instance.AddObject(this);
     }
     
     public Tag Clone()
@@ -37,7 +37,7 @@ public class Tag : IDisposable
 
     public void Dispose()
     {
-        ObjectManager.RemoveObj(this);
+        ObjectManager.Instance.RemoveObj(this);
         GC.SuppressFinalize(this);
     }
 
@@ -58,6 +58,6 @@ public class Tag : IDisposable
     
     ~Tag()
     {
-        ObjectManager.RemoveObj(this);
+        ObjectManager.Instance.RemoveObj(this);
     }
 }

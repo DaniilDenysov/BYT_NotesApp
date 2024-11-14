@@ -19,7 +19,7 @@ public class Note : IDisposable
         Title = title;
         Content = content;
         Priority = 0;
-        ObjectManager.AddObject(this);
+        ObjectManager.Instance.AddObject(this);
     }
 
     public Note()
@@ -39,7 +39,7 @@ public class Note : IDisposable
         CreationDate = note.CreationDate;
         Title = note.Title;
         Content = note.Content;
-        ObjectManager.AddObject(this);
+        ObjectManager.Instance.AddObject(this);
     }
     
     public override string ToString()
@@ -49,7 +49,7 @@ public class Note : IDisposable
 
     public void Dispose()
     {
-        ObjectManager.RemoveObj(this);
+        ObjectManager.Instance.RemoveObj(this);
         GC.SuppressFinalize(this);
     }
     
@@ -57,7 +57,7 @@ public class Note : IDisposable
     {
         if (ReferenceEquals(left, right)) return true;
         if (left is null || right is null) return false;
-        
+
         return left.Guid == right.Guid &&
                left.Title == right.Title &&
                left.Content == right.Content && 
@@ -73,6 +73,6 @@ public class Note : IDisposable
 
     ~Note()
     {
-        ObjectManager.RemoveObj(this);
+        ObjectManager.Instance.RemoveObj(this);
     }
 }

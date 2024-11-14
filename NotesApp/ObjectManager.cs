@@ -1,28 +1,57 @@
 ﻿using System.Xml.Serialization;
 
 namespace NotesApp;
-public static class ObjectManager
+public class ObjectManager
 {
+    private static ObjectManager _instance = new ObjectManager();
+    public static ObjectManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = new ObjectManager();
+            }
 
-    private static List<Object> objects = new List<Object>();
+            return _instance;
+        }
+        
+        private set
+        {
+            _instance = value;
+        }
+    }
 
-    public static void Init(List<Object> d)
+    private List<Object> objects = new List<Object>();
+
+    public ObjectManager()
+    {
+
+    }
+    
+    public ObjectManager(List<Object> d)
     {
         objects = d;
     }
 
-    public static IReadOnlyList<Object> GetAllData()
+    public void ClearAll()
+    {
+        objects.Clear();
+    }
+    
+
+    public IReadOnlyList<Object> GetAllData()
     {
         return objects.AsReadOnly();
     }
 
-    public static void AddObject<T>(T d)
+    public void AddObject<T>(T d)
     {
         if (d == null) return;
         objects.Add(d);
     }
 
-    public static void RemoveObj<T>(T d)
+    public void RemoveObj<T>(T d)
     {
         if (d == null) return;
         objects.Remove(d);

@@ -6,18 +6,18 @@ public class NotesCategory : Category<Note>, IDisposable
 {
     public NotesCategory(string title, string description = "") : base(title, description)
     {
-        ObjectManager.AddObject(this);
+        ObjectManager.Instance.AddObject(this);
     }
 
     public NotesCategory(Category<Note> category) : base(category)
     {
-        ObjectManager.AddObject(this);
+        ObjectManager.Instance.AddObject(this);
     }
 
     public NotesCategory()
         : base(string.Empty, string.Empty) 
     {
-        ObjectManager.AddObject(this);
+        ObjectManager.Instance.AddObject(this);
     }
 
     public override int GetPriority()
@@ -27,7 +27,7 @@ public class NotesCategory : Category<Note>, IDisposable
 
     public void Dispose()
     {
-        ObjectManager.RemoveObj(this);
+        ObjectManager.Instance.RemoveObj(this);
         GC.SuppressFinalize(this);
     }
 
@@ -59,6 +59,6 @@ public class NotesCategory : Category<Note>, IDisposable
     
     ~NotesCategory()
     {
-        ObjectManager.RemoveObj(this);
+        ObjectManager.Instance.RemoveObj(this);
     }
 }

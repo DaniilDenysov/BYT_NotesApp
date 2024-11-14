@@ -11,7 +11,7 @@ public static class SerializationUtility
     {
         DataContainer data = new DataContainer
         {
-            Objects = ObjectManager.GetAllData().ToList()  
+            Objects = ObjectManager.Instance.GetAllData().ToList()  
         };
         Serialize(data, dataFile);
     }
@@ -27,7 +27,7 @@ public static class SerializationUtility
         else
         {
             Console.WriteLine($"Loaded {data.Objects.Count} objects.");
-            ObjectManager.Init(data.Objects);
+            new ObjectManager(data.Objects);
         }
 
         Console.WriteLine("Deserialization completed.");

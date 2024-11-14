@@ -7,6 +7,7 @@ public class ObjectManagerTests
     [Fact]
     public void ObjectManager_CreateNote_CreateTag_CreateCategories()
     {
+        ObjectManager.Instance.ClearAll();
         Note note1 = new Note("First note");
         Note note2 = new Note("Second note");
         Tag tag1 = new Tag("First tag");
@@ -15,7 +16,7 @@ public class ObjectManagerTests
         NotesCategory notesCategory = new NotesCategory("The great notes category");
 
 
-        IReadOnlyList<Object> objects = ObjectManager.GetAllData();
+        IReadOnlyList<Object> objects = ObjectManager.Instance.GetAllData();
 
         Assert.True(objects[0] as Note == note1);
         Assert.True(objects[2] as Note == note2);
@@ -28,6 +29,7 @@ public class ObjectManagerTests
     [Fact]
     public void ObjectManager_DeleteObject()
     {
+        ObjectManager.Instance.ClearAll();
         Note note1 = new Note("First note");
         Note note2 = new Note("Second note");
         Tag tag1 = new Tag("First tag");
@@ -39,7 +41,7 @@ public class ObjectManagerTests
         tagsCategory.Dispose();
         note1.Dispose();
 
-        IReadOnlyList<Object> objects = ObjectManager.GetAllData();
+        IReadOnlyList<Object> objects = ObjectManager.Instance.GetAllData();
 
         Assert.False(objects.Contains(tag2));
         Assert.False(objects.Contains(tagsCategory));
