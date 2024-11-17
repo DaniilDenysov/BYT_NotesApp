@@ -2,7 +2,7 @@ using System;
 using System.IO;
 namespace NotesApp;
 
-public class Note : IDisposable
+public class Note : IDisposable, ICloneable
 {
     public string Guid { get;  set; }
     public uint Priority { get;  set; }
@@ -74,5 +74,15 @@ public class Note : IDisposable
     ~Note()
     {
         ObjectManager.Instance.RemoveObj(this);
+    }
+
+    public ICloneable Clone()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Clone(ICloneable cloneable)
+    {
+        throw new NotImplementedException();
     }
 }
