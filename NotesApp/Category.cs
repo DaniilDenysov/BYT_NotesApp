@@ -29,6 +29,10 @@ public abstract class Category<T>
         Items = category.Items;
     }
 
+    public override string ToString()
+    {
+        return "Title: " + Title + "; Description: " + Description;
+    }
     public abstract int GetPriority();
     
     public virtual void Add(T item)

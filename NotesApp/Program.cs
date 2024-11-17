@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using NotesApp;
+using Xunit;
 
 string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data.xml");
 SerializationUtility.LoadAll(path);

@@ -7,6 +7,7 @@ public class ObjectManagerTests
     [Fact]
     public void ObjectManager_CreateNote_CreateTag_CreateCategories()
     {
+        Thread.Sleep(1);
         ObjectManager.Instance.ClearAll();
         Note note1 = new Note("First note");
         Note note2 = new Note("Second note");
@@ -19,11 +20,12 @@ public class ObjectManagerTests
         IReadOnlyList<Object> objects = ObjectManager.Instance.GetAllData();
 
         Assert.True(objects[0] as Note == note1);
-        Assert.True(objects[2] as Note == note2);
-        Assert.True(objects[3] as Tag == tag1);
-        Assert.True(objects[4] as Tag == tag2);
-        Assert.True(objects[5] as TagsCategory == tagsCategory);
-        Assert.True(objects[6] as NotesCategory == notesCategory);
+        Assert.True(objects[1] as Note == note2);
+        Assert.True(objects[2] as Tag == tag1);
+        Assert.True(objects[3] as Tag == tag2);
+        Assert.True(objects[4] as TagsCategory == tagsCategory);
+        Assert.True(objects[5] as NotesCategory == notesCategory);
+
     }
 
     [Fact]

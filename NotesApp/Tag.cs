@@ -29,7 +29,12 @@ public class Tag : IDisposable
         Description = tag.Description;
         ObjectManager.Instance.AddObject(this);
     }
-    
+
+    public override string ToString()
+    {
+        return "Name: " + Name + "; Description: " + Description;
+    }
+
     public Tag Clone()
     {
         return new Tag(this);

@@ -132,25 +132,5 @@ public class SerializationTests
         Assert.True(objects[1] as Note == serializedNote2);
     }
 
-    [Fact]
-    public void ObjectManager_CreateNote_CreateTag_CreateCategories()
-    {
-        ObjectManager.Instance.ClearAll();
-        Note note1 = new Note("First note");
-        Note note2 = new Note("Second note");
-        Tag tag1 = new Tag("First tag");
-        Tag tag2 = new Tag("Second tag");
-        TagsCategory tagsCategory = new TagsCategory("The great tags category");
-        NotesCategory notesCategory = new NotesCategory("The great notes category");
-
-
-        IReadOnlyList<Object> objects = ObjectManager.Instance.GetAllData();
-
-        Assert.True(objects[0] as Note == note1);
-        Assert.True(objects[1] as Note == note2);
-        Assert.True(objects[2] as Tag == tag1);
-        Assert.True(objects[3] as Tag == tag2);
-        Assert.True(objects[4] as TagsCategory == tagsCategory);
-        Assert.True(objects[5] as NotesCategory == notesCategory);
-    }
+   
 }
