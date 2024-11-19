@@ -1,5 +1,3 @@
-using Xunit;
-
 namespace NotesApp;
 
 public class NotesCategory : Category<Note>, IDisposable
