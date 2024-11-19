@@ -80,4 +80,26 @@ public class NoteTests
         Assert.True(note.Content == "Test");
         Assert.True(note.Guid == "t");
     }
+
+    [Fact]
+    public void NoteCreateTime()
+    {
+        Note note = new Note();
+
+        Assert.Throws<InvalidOperationException>(() =>
+        {
+            note.SetCreationDate(DateTime.MinValue);
+        });
+    }
+
+    [Fact]
+    public void NoteModTime() 
+    {
+        Note note = new Note();
+
+        Assert.Throws<InvalidOperationException>(() =>
+        {
+            note.SetLastModificationDate(DateTime.MinValue);
+        });
+    }
 }
