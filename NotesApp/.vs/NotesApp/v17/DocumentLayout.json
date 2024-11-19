@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\midori no hikari\\source\\repos\\byt_notesapp\\notesapp\\sequentialtestcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:sequentialtestcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\midori no hikari\\source\\repos\\byt_notesapp\\notesapp\\categorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:categorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\midori no hikari\\source\\repos\\byt_notesapp\\notesapp\\objectmanagertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:objectmanagertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\midori no hikari\\source\\repos\\byt_notesapp\\notesapp\\serializationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:serializationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\midori no hikari\\source\\repos\\byt_notesapp\\notesapp\\tagtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:tagtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\midori no hikari\\source\\repos\\byt_notesapp\\notesapp\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\midori no hikari\\source\\repos\\byt_notesapp\\notesapp\\objectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:objectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\midori no hikari\\source\\repos\\byt_notesapp\\notesapp\\notetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:notetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,79 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SequentialTestCollection.cs",
-              "DocumentMoniker": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\SequentialTestCollection.cs",
-              "RelativeDocumentMoniker": "SequentialTestCollection.cs",
-              "ToolTip": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\SequentialTestCollection.cs",
-              "RelativeToolTip": "SequentialTestCollection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T17:06:38.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Note.cs",
-              "DocumentMoniker": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\Note.cs",
-              "RelativeDocumentMoniker": "Note.cs",
-              "ToolTip": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\Note.cs",
-              "RelativeToolTip": "Note.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T12:43:07.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "CategoryTests.cs",
               "DocumentMoniker": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\CategoryTests.cs",
               "RelativeDocumentMoniker": "CategoryTests.cs",
               "ToolTip": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\CategoryTests.cs",
               "RelativeToolTip": "CategoryTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAfAAAA",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAlwKYAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T17:04:05.743Z",
+              "WhenOpened": "2024-11-19T19:28:01.506Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ObjectManagerTests.cs",
-              "DocumentMoniker": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\ObjectManagerTests.cs",
-              "RelativeDocumentMoniker": "ObjectManagerTests.cs",
-              "ToolTip": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\ObjectManagerTests.cs",
-              "RelativeToolTip": "ObjectManagerTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAfAAAA",
+              "Title": "ObjectManager.cs",
+              "DocumentMoniker": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\ObjectManager.cs",
+              "RelativeDocumentMoniker": "ObjectManager.cs",
+              "ToolTip": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\ObjectManager.cs",
+              "RelativeToolTip": "ObjectManager.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAcwCkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:45:44.06Z",
+              "WhenOpened": "2024-11-19T19:17:58.539Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SerializationTests.cs",
-              "DocumentMoniker": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\SerializationTests.cs",
-              "RelativeDocumentMoniker": "SerializationTests.cs",
-              "ToolTip": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\SerializationTests.cs",
-              "RelativeToolTip": "SerializationTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwMAAAAfAAAA",
+              "Title": "NoteTests.cs",
+              "DocumentMoniker": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\NoteTests.cs",
+              "RelativeDocumentMoniker": "NoteTests.cs",
+              "ToolTip": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\NoteTests.cs",
+              "RelativeToolTip": "NoteTests.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAzwFAAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T17:05:54.815Z",
+              "WhenOpened": "2024-11-19T17:14:53.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TagTests.cs",
-              "DocumentMoniker": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\TagTests.cs",
-              "RelativeDocumentMoniker": "TagTests.cs",
-              "ToolTip": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\TagTests.cs",
-              "RelativeToolTip": "TagTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwMAAAAfAAAA",
+              "DocumentIndex": 1,
+              "Title": "Note.cs",
+              "DocumentMoniker": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\Note.cs",
+              "RelativeDocumentMoniker": "Note.cs",
+              "ToolTip": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\Note.cs",
+              "RelativeToolTip": "Note.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAxwA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T17:05:59.617Z",
+              "WhenOpened": "2024-11-19T12:43:07.986Z",
               "EditorCaption": ""
             },
             {

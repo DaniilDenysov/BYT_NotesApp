@@ -37,6 +37,10 @@ public abstract class Category<T>
     
     public virtual void Add(T item)
     {
+        if (item == null)
+        {
+            throw new ArgumentNullException("Object in category cannot be null");
+        }
         Items.Add(item);
     }
 

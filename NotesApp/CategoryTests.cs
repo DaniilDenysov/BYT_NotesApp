@@ -156,4 +156,15 @@ public class CategoryTests
         IReadOnlyList<Object> objects = ObjectManager.Instance.GetAllData();
         Assert.Empty(objects);
     }
+
+    [Fact]
+    public void NotesCategoryAddNull()
+    {
+        NotesCategory category = new NotesCategory();
+        Note note = null;
+        Assert.Throws<ArgumentNullException>(() =>
+        {
+            category.Add(note);
+        });
+    }
 }

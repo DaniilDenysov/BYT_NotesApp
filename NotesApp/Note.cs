@@ -6,10 +6,10 @@ public class Note : IDisposable, ICloneable
 {
     public string Guid { get;  set; }
     public uint Priority { get;  set; }
-    public DateTime CreationDate { get; set; }
-    public DateTime LastModificationDate { get; set; }
+    /*    public DateTime CreationDate { get; set; }
+        public DateTime LastModificationDate { get; set; }*/
 
-/*    private DateTime _creationDate;
+    private DateTime _creationDate;
     private DateTime _lastModificationDate;
 
     public DateTime CreationDate
@@ -17,11 +17,17 @@ public class Note : IDisposable, ICloneable
         get => _creationDate;
         set
         {
-            if (value > _lastModificationDate)
+            if (_creationDate == default)
+            {
+                _creationDate = value;
+            }
+            else
+            if (value < DateTime.Now)
             {
                 throw new InvalidOperationException("CreationDate cannot be later than LastModificationDate.");
             }
-            _creationDate = value;
+            else
+                _creationDate = value;
         }
     }
 
@@ -30,13 +36,19 @@ public class Note : IDisposable, ICloneable
         get => _lastModificationDate;
         set
         {
-            if (value < _creationDate)
+            if (value < _creationDate && _creationDate != default)
             {
                 throw new InvalidOperationException("LastModificationDate cannot be earlier than CreationDate.");
             }
-            _lastModificationDate = value;
+            else
+            if (value < _lastModificationDate && _lastModificationDate != default)
+            {
+                throw new InvalidOperationException("LastModificationDate cannot be earlier than CreationDate.");
+            }
+            else
+                _lastModificationDate = value;
         }
-    }*/
+    }
     public string Title { get;  set; }
     public string? Content { get;  set; }
 
@@ -44,7 +56,7 @@ public class Note : IDisposable, ICloneable
     {
         Guid = guid == "" ? System.Guid.NewGuid().ToString() : guid;
         CreationDate = DateTime.Now;
-        LastModificationDate = CreationDate;
+        LastModificationDate = DateTime.Now;
         Title = title;
         Content = content;
         Priority = 0;
@@ -55,7 +67,7 @@ public class Note : IDisposable, ICloneable
     {
         Guid = System.Guid.NewGuid().ToString();
         CreationDate = DateTime.Now;
-        //LastModificationDate = DateTime.Now;
+        LastModificationDate = DateTime.Now;
         Title = string.Empty;
         Content = string.Empty;
         Priority = 0;

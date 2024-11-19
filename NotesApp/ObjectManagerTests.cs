@@ -97,4 +97,15 @@ public class ObjectManagerTests
         Assert.False(objects.Contains(note1));
     }
 
+    [Fact]
+    public void ObjectManagerNullObjectAdd() 
+    {
+        Note note = null;
+        Assert.Throws<ArgumentNullException>(() =>
+        {
+            ObjectManager.Instance.AddObject(note);
+        });
+    }
+
+
 }

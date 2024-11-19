@@ -47,7 +47,8 @@ public class ObjectManager
 
     public void AddObject<T>(T d)
     {
-        if (d == null) return;
+        if (d == null)
+            throw new ArgumentNullException("Object added cannot be null");
         objects.Add(d);
     }
 

@@ -31,10 +31,7 @@ public class TagTests
     [Fact]
     public void TagGet()
     {
-        Tag tag = new Tag();
-        tag.Name = "Test";
-        tag.Description = "Desc";
-        tag.Guid = "t";
+        Tag tag = new Tag("Test", "Desc", "t");
         Assert.True(tag.Name == "Test");
         Assert.True(tag.Description == "Desc");
         Assert.True(tag.Guid == "t");
@@ -68,5 +65,15 @@ public class TagTests
     {
         Tag tag = new Tag("Name", "Desc");
         Assert.True(tag.ToString() == "Name: Name; Description: Desc");
+    }
+
+    [Fact]
+    public void TagDispose()
+    {
+        ObjectManager.Instance.ClearAll();
+        Tag tag = new Tag();
+        tag.Dispose();
+        IReadOnlyList<Object> objects = ObjectManager.Instance.GetAllData();
+        Assert.Empty(objects);
     }
 }
