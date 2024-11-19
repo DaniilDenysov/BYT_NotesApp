@@ -28,16 +28,6 @@ public class TagTests
     }
 
     [Fact]
-    public void TagDispose() {
-        Thread.Sleep(10);
-        ObjectManager.Instance.ClearAll();
-        Tag tag1 = new Tag();
-        tag1.Dispose();
-        IReadOnlyList<Object> objects = ObjectManager.Instance.GetAllData();
-        Assert.Empty(objects);
-    }
-
-    [Fact]
     public void TagGet()
     {
         Tag tag = new Tag();

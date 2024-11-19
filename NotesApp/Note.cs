@@ -6,10 +6,37 @@ public class Note : IDisposable, ICloneable
 {
     public string Guid { get;  set; }
     public uint Priority { get;  set; }
-    public DateTime LastModificationDate { get;  set; }
-    public DateTime CreationDate { get;  set; }
+
+    private DateTime _creationDate;
+    private DateTime _lastModificationDate;
+    public DateTime CreationDate
+    {
+        get => _creationDate;
+        set
+        {
+            if (value > _lastModificationDate)
+            {
+                throw new InvalidOperationException("CreationDate cannot be later than LastModificationDate.");
+            }
+            _creationDate = value;
+        }
+    }
+
+    public DateTime LastModificationDate
+    {
+        get => _lastModificationDate;
+        set
+        {
+            if (value < _creationDate)
+            {
+                throw new InvalidOperationException("LastModificationDate cannot be earlier than CreationDate.");
+            }
+            _lastModificationDate = value;
+        }
+    }
     public string Title { get;  set; }
     public string? Content { get;  set; }
+
 
     public Note(string title, string content = "", string guid = "")
     {

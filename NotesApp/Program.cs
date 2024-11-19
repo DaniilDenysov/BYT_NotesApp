@@ -2,7 +2,7 @@
 using NotesApp;
 using Xunit;
 
-string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data.xml");
+/*string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data.xml");
 SerializationUtility.LoadAll(path);
 
 IReadOnlyList<Object> list = ObjectManager.Instance.GetAllData();
@@ -14,4 +14,4 @@ n3.Dispose();
 Console.WriteLine();
 foreach (var item in list) Console.WriteLine(item);
 SerializationUtility.SaveAll(path);
-Console.Read();
+Console.Read();*/
