@@ -29,6 +29,8 @@ public class TagTests
 
     [Fact]
     public void TagDispose() {
+        Thread.Sleep(10);
+        ObjectManager.Instance.ClearAll();
         Tag tag1 = new Tag();
         tag1.Dispose();
         IReadOnlyList<Object> objects = ObjectManager.Instance.GetAllData();
@@ -68,5 +70,12 @@ public class TagTests
         Tag tag = new Tag("Name", "Desc", "Guid");
         Tag clone = tag.Clone();
         Assert.True(tag == clone);
+    }
+
+    [Fact]
+    public void TagToString()
+    {
+        Tag tag = new Tag("Name", "Desc");
+        Assert.True(tag.ToString() == "Name: Name; Description: Desc");
     }
 }

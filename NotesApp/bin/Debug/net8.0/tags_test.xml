@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TagsCategory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Guid>b34e2c27-506e-4090-abc3-fb519124e3bf</Guid>
+  <Guid>92d347f3-7764-4bc4-b2da-b41bffc12260</Guid>
   <Title>Category1</Title>
   <Description>First tag category</Description>
   <Items>
     <Tag>
-      <Guid>f2094ce9-31d6-4a3a-8188-493aa5a4b97d</Guid>
+      <Guid>eaa53399-f5e0-4410-b664-3b3587ea883e</Guid>
       <Name>Tag1</Name>
       <Description>Description1</Description>
     </Tag>
     <Tag>
-      <Guid>882aa835-1a93-42b1-9315-6bd9909a4174</Guid>
+      <Guid>e6071db7-f9cd-4dc3-adbd-c0f9d3d2153e</Guid>
       <Name>Tag2</Name>
       <Description>Description2</Description>
     </Tag>
