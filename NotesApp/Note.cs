@@ -15,11 +15,37 @@ public class Note : IDisposable, ICloneable
     }
 
     public void SetCreationDate(DateTime value)
-    {
+    {   
+        if(creationDate == default)
+        {
+            creationDate = value;
+        } 
+        else if(value < DateTime.Now){
+            throw new InvalidOperationException("Creation Date can't be earlier than today");
+        } else
         creationDate = value;
     }
 
-    public DateTime LastModificationDate { get; set; }
+    private DateTime lastModificationDate;
+
+    public DateTime GetLastModificationDate()
+    {
+        return lastModificationDate;
+    }
+
+    public void SetLastModificationDate(DateTime value)
+    {
+        if(value < creationDate && creationDate != default)
+        {
+            throw new InvalidOperationException("Modification cannot be earlier than creation date");
+        } else if (value < lastModificationDate && lastModificationDate != default)
+        {
+            throw new InvalidOperationException("Modification cannot be earlier than previous modification");
+        } else
+
+        lastModificationDate = value;
+    }
+
     public string Title { get;  set; }
     public string? Content { get;  set; }
 
@@ -27,7 +53,7 @@ public class Note : IDisposable, ICloneable
     {
         Guid = guid == "" ? System.Guid.NewGuid().ToString() : guid;
         SetCreationDate(DateTime.Now);
-        LastModificationDate = DateTime.Now;
+        SetLastModificationDate(DateTime.Now);
         Title = title;
         Content = content;
         Priority = 0;
@@ -38,7 +64,7 @@ public class Note : IDisposable, ICloneable
     {
         Guid = System.Guid.NewGuid().ToString();
         SetCreationDate(DateTime.Now);
-        LastModificationDate = DateTime.Now;
+        SetLastModificationDate(DateTime.Now);
         Title = string.Empty;
         Content = string.Empty;
         Priority = 0;
@@ -47,7 +73,7 @@ public class Note : IDisposable, ICloneable
     public Note(Note note)
     {
         Guid = note.Guid;
-        LastModificationDate = note.LastModificationDate;
+        SetLastModificationDate(note.GetLastModificationDate());
         SetCreationDate(note.GetCreationDate());
         Title = note.Title;
         Content = note.Content;
@@ -70,14 +96,17 @@ public class Note : IDisposable, ICloneable
         if (ReferenceEquals(left, right)) return true;
         if (left is null || right is null) return false;
 
-        DateTime leftTimeNormalized = new DateTime(left.GetCreationDate().Ticks - (left.GetCreationDate().Ticks % TimeSpan.TicksPerSecond));
-        DateTime rightTimeNormalized= new DateTime(right.GetCreationDate().Ticks - (right.GetCreationDate().Ticks % TimeSpan.TicksPerSecond));
+        DateTime leftTimeCreate = new DateTime(left.creationDate.Ticks - (left.creationDate.Ticks % TimeSpan.TicksPerSecond), left.creationDate.Kind);
+        DateTime rightTimeCreate = new DateTime(right.creationDate.Ticks - (right.creationDate.Ticks % TimeSpan.TicksPerSecond), right.creationDate.Kind);
+        DateTime leftTimeMod = new DateTime(left.lastModificationDate.Ticks - (left.lastModificationDate.Ticks % TimeSpan.TicksPerSecond), left.lastModificationDate.Kind);
+        DateTime RightTimeMod = new DateTime(right.lastModificationDate.Ticks - (right.lastModificationDate.Ticks % TimeSpan.TicksPerSecond), right.lastModificationDate.Kind);
+
 
         return left.Guid == right.Guid &&
                left.Title == right.Title &&
                left.Content == right.Content && 
-               leftTimeNormalized == rightTimeNormalized &&
-               left.LastModificationDate == right.LastModificationDate &&
+               leftTimeCreate == rightTimeCreate &&
+               leftTimeMod == RightTimeMod &&
                left.Priority == right.Priority;
     }
     

@@ -2,16 +2,14 @@
 <DataContainer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Objects>
     <Object xsi:type="Note">
-      <Guid>6bc502ca-1160-41d7-8fed-e31cc4c7a486</Guid>
+      <Guid>65e3e222-02f6-4f55-bdad-2ec9ce3db192</Guid>
       <Priority>0</Priority>
-      <LastModificationDate>2024-11-19T20:53:02.3460466+01:00</LastModificationDate>
       <Title>Note1</Title>
       <Content>Hello</Content>
     </Object>
     <Object xsi:type="Note">
-      <Guid>5c369980-844c-419b-84c7-a5031b758287</Guid>
+      <Guid>5a7e75ad-722b-4e6e-8506-5762487e9c46</Guid>
       <Priority>0</Priority>
-      <LastModificationDate>2024-11-19T20:53:02.3460474+01:00</LastModificationDate>
       <Title>Note2</Title>
       <Content>World</Content>
     </Object>

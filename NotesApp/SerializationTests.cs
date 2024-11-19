@@ -20,13 +20,18 @@ public class SerializationTests
         Assert.True(File.Exists(path));
         Note deserializedNote = SerializationUtility.Deserialize<Note>(path);
 
-        DateTime sNoteNormalized = new DateTime(serializedNote.GetCreationDate().Ticks - (serializedNote.GetCreationDate().Ticks % TimeSpan.TicksPerSecond));
-        DateTime dNoteNormalized = new DateTime(deserializedNote.GetCreationDate().Ticks - (deserializedNote.GetCreationDate().Ticks % TimeSpan.TicksPerSecond));
+       
+
+        DateTime LeftCreate = new DateTime(serializedNote.GetCreationDate().Ticks - (serializedNote.GetCreationDate().Ticks % TimeSpan.TicksPerSecond), serializedNote.GetCreationDate().Kind);
+        DateTime RightCreate = new DateTime(deserializedNote.GetCreationDate().Ticks - (deserializedNote.GetCreationDate().Ticks % TimeSpan.TicksPerSecond), deserializedNote.GetCreationDate().Kind);
+        DateTime LeftMod = new DateTime(serializedNote.GetLastModificationDate().Ticks - (serializedNote.GetLastModificationDate().Ticks % TimeSpan.TicksPerSecond), serializedNote.GetLastModificationDate().Kind);
+        DateTime RightMod = new DateTime(deserializedNote.GetLastModificationDate().Ticks - (deserializedNote.GetLastModificationDate().Ticks % TimeSpan.TicksPerSecond), deserializedNote.GetLastModificationDate().Kind);
+
 
         Assert.True(deserializedNote != null);
         Assert.Equal(serializedNote.Guid,deserializedNote.Guid);
-        Assert.Equal(serializedNote.LastModificationDate, deserializedNote.LastModificationDate);
-        Assert.Equal(sNoteNormalized, dNoteNormalized);
+        Assert.Equal(LeftMod, RightMod);
+        Assert.Equal(LeftCreate, RightCreate);
         Assert.Equal(serializedNote.Content, deserializedNote.Content);
         Assert.Equal(serializedNote.Priority ,deserializedNote.Priority);
         Assert.Equal(serializedNote.Title, deserializedNote.Title);
