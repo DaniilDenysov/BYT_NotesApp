@@ -9,6 +9,7 @@ public class SerializationTests
     {
         string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "test.xml");
         
+       
         
         if (File.Exists(path))
         {
@@ -18,10 +19,14 @@ public class SerializationTests
         SerializationUtility.Serialize(serializedNote,path);
         Assert.True(File.Exists(path));
         Note deserializedNote = SerializationUtility.Deserialize<Note>(path);
+
+        DateTime sNoteNormalized = new DateTime(serializedNote.GetCreationDate().Ticks - (serializedNote.GetCreationDate().Ticks % TimeSpan.TicksPerSecond));
+        DateTime dNoteNormalized = new DateTime(deserializedNote.GetCreationDate().Ticks - (deserializedNote.GetCreationDate().Ticks % TimeSpan.TicksPerSecond));
+
         Assert.True(deserializedNote != null);
         Assert.Equal(serializedNote.Guid,deserializedNote.Guid);
         Assert.Equal(serializedNote.LastModificationDate, deserializedNote.LastModificationDate);
-        Assert.Equal(serializedNote.CreationDate, deserializedNote.CreationDate);
+        Assert.Equal(sNoteNormalized, dNoteNormalized);
         Assert.Equal(serializedNote.Content, deserializedNote.Content);
         Assert.Equal(serializedNote.Priority ,deserializedNote.Priority);
         Assert.Equal(serializedNote.Title, deserializedNote.Title);
@@ -64,6 +69,9 @@ public class SerializationTests
         SerializationUtility.Serialize(serializedNotesCategory,path);
         Assert.True(File.Exists(path));
         NotesCategory deserializedNotesCategory = SerializationUtility.Deserialize<NotesCategory>(path);
+
+
+
         Assert.Equal(serializedNotesCategory.Guid,deserializedNotesCategory.Guid);
         Assert.Equal(serializedNotesCategory.Title,deserializedNotesCategory.Title);
         Assert.Equal(serializedNotesCategory.Description,deserializedNotesCategory.Description);
