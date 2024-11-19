@@ -1,7 +1,7 @@
 using NotesApp;
 using Xunit;
 
-
+[Collection("SequentialTests")]
 public class SerializationTests
 {
     [Fact]

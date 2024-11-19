@@ -1,6 +1,7 @@
 using Xunit;
 using NotesApp;
 
+[Collection("SequentialTests")]
 public class CategoryTests
 {
     [Fact]
@@ -63,7 +64,6 @@ public class CategoryTests
     [Fact]
     public void TagCategoryDispose()
     {
-        Thread.Sleep(15);
         ObjectManager.Instance.ClearAll();
         TagsCategory category = new TagsCategory();
         category.Dispose();

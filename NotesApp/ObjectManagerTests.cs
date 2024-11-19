@@ -1,13 +1,60 @@
 ﻿using NotesApp;
 using Xunit;
 
+[Collection("SequentialTests")]
 public class ObjectManagerTests
 {
+    [Fact]
+    public void ObjectManagerCreateNote()
+    {
+        ObjectManager.Instance.ClearAll();
+        Note note1 = new Note("First note");
+        Note note2 = new Note("Second note");
+
+        IReadOnlyList<Object> objects = ObjectManager.Instance.GetAllData();
+
+        Assert.True(objects[0] as Note == note1);
+        Assert.True(objects[1] as Note == note2);
+    }
 
     [Fact]
-    public void ObjectManager_CreateNote_CreateTag_CreateCategories()
+    public void ObjectManagerCreateTag()
     {
-        Thread.Sleep(1);
+        ObjectManager.Instance.ClearAll();
+        Tag tag1 = new Tag("First tag");
+        Tag tag2 = new Tag("Second tag");
+
+        IReadOnlyList<Object> objects = ObjectManager.Instance.GetAllData();
+        Assert.True(objects[0] as Tag == tag1);
+        Assert.True(objects[1] as Tag == tag2);
+    }
+
+    [Fact]
+    public void ObjectManagerCreateTagsCategory() {
+        ObjectManager.Instance.ClearAll();
+        TagsCategory tagsCategory1 = new TagsCategory("The great tags category1");
+        TagsCategory tagsCategory2 = new TagsCategory("The great tags category2");
+
+        IReadOnlyList<Object> objects = ObjectManager.Instance.GetAllData();
+        Assert.True(objects[0] as TagsCategory == tagsCategory1);
+        Assert.True(objects[1] as TagsCategory == tagsCategory2);
+    }
+
+    [Fact]
+    public void ObjectManagerCreateNoteCategory()
+    {
+        ObjectManager.Instance.ClearAll();
+        NotesCategory notesCategory1 = new NotesCategory("The great notes category1");
+        NotesCategory notesCategory2 = new NotesCategory("The great notes category2");
+
+        IReadOnlyList<Object> objects = ObjectManager.Instance.GetAllData();
+        Assert.True(objects[0] as NotesCategory == notesCategory1);
+        Assert.True(objects[1] as NotesCategory == notesCategory2);
+    }
+
+    [Fact]
+    public void ObjectManager_CreateAllObj()
+    {
         ObjectManager.Instance.ClearAll();
         Note note1 = new Note("First note");
         Note note2 = new Note("Second note");
@@ -49,4 +96,5 @@ public class ObjectManagerTests
         Assert.False(objects.Contains(tagsCategory));
         Assert.False(objects.Contains(note1));
     }
+
 }

@@ -6,9 +6,12 @@ public class Note : IDisposable, ICloneable
 {
     public string Guid { get;  set; }
     public uint Priority { get;  set; }
+    public DateTime CreationDate { get; set; }
+    public DateTime LastModificationDate { get; set; }
 
-    private DateTime _creationDate;
+/*    private DateTime _creationDate;
     private DateTime _lastModificationDate;
+
     public DateTime CreationDate
     {
         get => _creationDate;
@@ -33,16 +36,15 @@ public class Note : IDisposable, ICloneable
             }
             _lastModificationDate = value;
         }
-    }
+    }*/
     public string Title { get;  set; }
     public string? Content { get;  set; }
-
 
     public Note(string title, string content = "", string guid = "")
     {
         Guid = guid == "" ? System.Guid.NewGuid().ToString() : guid;
-        LastModificationDate = DateTime.Now;
         CreationDate = DateTime.Now;
+        LastModificationDate = CreationDate;
         Title = title;
         Content = content;
         Priority = 0;
@@ -52,8 +54,8 @@ public class Note : IDisposable, ICloneable
     public Note()
     {
         Guid = System.Guid.NewGuid().ToString();
-        LastModificationDate = DateTime.Now;
         CreationDate = DateTime.Now;
+        //LastModificationDate = DateTime.Now;
         Title = string.Empty;
         Content = string.Empty;
         Priority = 0;

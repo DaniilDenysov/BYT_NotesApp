@@ -1,6 +1,7 @@
 ﻿using NotesApp;
 using Xunit;
 
+[Collection("SequentialTests")]
 public class TagTests
 {
     [Fact]
