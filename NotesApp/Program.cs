@@ -2,7 +2,7 @@
 using NotesApp;
 using Xunit;
 
-string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data.xml");
+/*string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data.xml");
 SerializationUtility.LoadAll(path);
 
 IReadOnlyList<Object> list = ObjectManager.Instance.GetAllData();
@@ -14,4 +14,17 @@ n3.Dispose();
 Console.WriteLine();
 foreach (var item in list) Console.WriteLine(item);
 SerializationUtility.SaveAll(path);
-Console.Read();
+Console.Read();*/
+
+Note parentNote = new Note("Parent");
+Note childNote1 = new Note("child1");
+Note childNote2 = new Note("child2");
+
+parentNote.AddChild(childNote1);
+parentNote.AddChild(childNote2);
+
+Console.WriteLine(childNote1.getParent().Title);
+Console.WriteLine(childNote2.getParent().Title);
+List<Note> notes = parentNote.getChildren();
+Console.WriteLine(notes[0].Title);
+Console.WriteLine(notes[1].Title);

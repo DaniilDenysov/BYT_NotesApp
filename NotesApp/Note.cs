@@ -7,7 +7,52 @@ public class Note : IDisposable, ICloneable
     public string Guid { get;  set; }
     public uint Priority { get;  set; }
 
+    public string Title { get; set; }
+    public string? Content { get; set; }
+    public Note parent;
+    public List<Note> children;
+
     private DateTime creationDate;
+    private DateTime lastModificationDate;
+
+    public void AddParent(Note note)
+    {
+        if(parent == null)
+        {
+            parent = note;
+            note.ChildAftetParent(this);
+            lastModificationDate = DateTime.Now;
+        }
+        else
+        {
+            throw new InvalidOperationException("Delete previous parent first");
+        }
+    }
+
+    private void ChildAftetParent(Note note)
+    {
+        if (!children.Contains(note))
+        {
+            children.Add(note);
+        }
+    }
+
+    public void AddChild(Note note)
+    {
+        note.AddParent(this);
+    }
+
+
+    public Note getParent()
+    {
+        return parent;
+    }
+
+    public List<Note> getChildren()
+    {
+        return children;
+    }
+
 
     public DateTime GetCreationDate()
     {
@@ -25,8 +70,6 @@ public class Note : IDisposable, ICloneable
         } else
         creationDate = value;
     }
-
-    private DateTime lastModificationDate;
 
     public DateTime GetLastModificationDate()
     {
@@ -46,9 +89,6 @@ public class Note : IDisposable, ICloneable
         lastModificationDate = value;
     }
 
-    public string Title { get;  set; }
-    public string? Content { get;  set; }
-
     public Note(string title, string content = "", string guid = "")
     {
         Guid = guid == "" ? System.Guid.NewGuid().ToString() : guid;
@@ -58,6 +98,7 @@ public class Note : IDisposable, ICloneable
         Content = content;
         Priority = 0;
         ObjectManager.Instance.AddObject(this);
+        children = new List<Note>();
     }
 
     public Note()
@@ -68,6 +109,7 @@ public class Note : IDisposable, ICloneable
         Title = string.Empty;
         Content = string.Empty;
         Priority = 0;
+        children = new List<Note>();
     }
 
     public Note(Note note)
@@ -78,6 +120,7 @@ public class Note : IDisposable, ICloneable
         Title = note.Title;
         Content = note.Content;
         ObjectManager.Instance.AddObject(this);
+        children = new List<Note>();
     }
     
     public override string ToString()
