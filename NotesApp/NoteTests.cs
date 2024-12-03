@@ -102,4 +102,117 @@ public class NoteTests
             note.SetLastModificationDate(DateTime.MinValue);
         });
     }
+
+
+    [Fact]
+    public void AddChild_ShouldAddChildSuccessfully()
+    {
+
+        Note parent = new Note("Parent", "Parent content");
+        Note child = new Note("Child", "Child content");
+
+
+        parent.AddChild(child);
+
+
+        Assert.Contains(child, parent.Children);
+        Assert.Equal(parent, child.Parent);
+    }
+
+    [Fact]
+    public void AddChild_ShouldThrowException_IfChildAlreadyHasParent()
+    {
+
+        Note parent1 = new Note("Parent1", "Content");
+        Note parent2 = new Note("Parent2", "Content");
+        Note child = new Note("Child", "Child content");
+
+        parent1.AddChild(child);
+
+
+        Assert.Throws<InvalidOperationException>(() => parent2.AddChild(child));
+    }
+
+    [Fact]
+    public void RemoveChild_ShouldRemoveChildSuccessfully()
+    {
+
+        Note parent = new Note("Parent", "Parent content");
+        Note child = new Note("Child", "Child content");
+        parent.AddChild(child);
+
+        Assert.True(parent.RemoveChild(child));
+        Assert.DoesNotContain(child, parent.Children);
+        Assert.Null(child.Parent);
+    }
+
+    [Fact]
+    public void RemoveChild_ShouldReturnFalse_IfChildDoesNotExist()
+    {
+
+        Note parent = new Note("Parent", "Parent content");
+        Note child = new Note("Child", "Child content");
+
+        Assert.False(parent.RemoveChild(child));
+    }
+
+    [Fact]
+    public void SetParent_ShouldUpdateParentSuccessfully()
+    {
+
+        Note parent = new Note("Parent", "Parent content");
+        Note child = new Note("Child", "Child content");
+
+
+        child.SetParent(parent);
+
+
+        Assert.Equal(parent, child.Parent);
+        Assert.Contains(child, parent.Children);
+    }
+
+    [Fact]
+    public void SetParent_ShouldRemoveFromPreviousParent()
+    {
+
+        Note parent1 = new Note("Parent1", "Parent1 content");
+        Note parent2 = new Note("Parent2", "Parent2 content");
+        Note child = new Note("Child", "Child content");
+        parent1.AddChild(child);
+
+
+        child.SetParent(parent2);
+
+
+        Assert.Equal(parent2, child.Parent);
+        Assert.Contains(child, parent2.Children);
+        Assert.DoesNotContain(child, parent1.Children);
+    }
+
+    [Fact]
+    public void RemoveParent_ShouldRemoveParentSuccessfully()
+    {
+
+        Note parent = new Note("Parent", "Parent content");
+        Note child = new Note("Child", "Child content");
+        parent.AddChild(child);
+
+
+        child.RemoveParent();
+
+
+        Assert.Null(child.Parent);
+        Assert.DoesNotContain(child, parent.Children);
+    }
+
+    [Fact]
+    public void AddChild_ShouldThrowArgumentNullException_IfChildIsNull()
+    {
+
+        Note parent = new Note("Parent", "Parent content");
+
+
+        Assert.Throws<ArgumentNullException>(() => parent.AddChild(null));
+    }
+
 }
