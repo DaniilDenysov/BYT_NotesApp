@@ -21,10 +21,11 @@ Note childNote1 = new Note("child1");
 Note childNote2 = new Note("child2");
 
 parentNote.AddChild(childNote1);
-parentNote.AddChild(childNote2);
+childNote2.SetParent(parentNote);
 
-Console.WriteLine(childNote1.getParent().Title);
-Console.WriteLine(childNote2.getParent().Title);
-List<Note> notes = parentNote.getChildren();
-Console.WriteLine(notes[0].Title);
-Console.WriteLine(notes[1].Title);
+
+parentNote.DisplayHierarchy();
+
+childNote1.RemoveParent();
+
+parentNote.DisplayHierarchy();

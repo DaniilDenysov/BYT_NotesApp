@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Xml.Linq;
 namespace NotesApp;
 
 public class Note : IDisposable, ICloneable
@@ -9,49 +10,58 @@ public class Note : IDisposable, ICloneable
 
     public string Title { get; set; }
     public string? Content { get; set; }
-    public Note parent;
-    public List<Note> children;
+    public Note Parent { get; private set; }
+    public List<Note> Children { get; private set; }
 
     private DateTime creationDate;
     private DateTime lastModificationDate;
 
-    public void AddParent(Note note)
+
+    public void AddChild(Note child)
     {
-        if(parent == null)
+        if (child == null)
+            throw new ArgumentNullException(nameof(child));
+
+        if (child.Parent != null)
+            throw new InvalidOperationException("The note already has a parent.");
+
+        child.Parent = this;
+        Children.Add(child);
+    }
+
+
+    public bool RemoveChild(Note child)
+    {
+        if (child == null || !Children.Contains(child))
+            return false;
+
+        child.Parent = null;
+        return Children.Remove(child);
+    }
+
+
+    public void SetParent(Note parent)
+    {
+        if (Parent != null)
+            Parent.RemoveChild(this);
+
+        parent?.AddChild(this);
+    }
+
+    public void RemoveParent()
+    {
+        Parent?.RemoveChild(this);
+    }
+
+    public void DisplayHierarchy(int indent = 0)
+    {
+        Console.WriteLine(new string(' ', indent * 2) + $"- {Title}: {Content}");
+        foreach (var child in Children)
         {
-            parent = note;
-            note.ChildAftetParent(this);
-            lastModificationDate = DateTime.Now;
-        }
-        else
-        {
-            throw new InvalidOperationException("Delete previous parent first");
+            child.DisplayHierarchy(indent + 1);
         }
     }
 
-    private void ChildAftetParent(Note note)
-    {
-        if (!children.Contains(note))
-        {
-            children.Add(note);
-        }
-    }
-
-    public void AddChild(Note note)
-    {
-        note.AddParent(this);
-    }
-
-
-    public Note getParent()
-    {
-        return parent;
-    }
-
-    public List<Note> getChildren()
-    {
-        return children;
-    }
 
 
     public DateTime GetCreationDate()
@@ -98,7 +108,7 @@ public class Note : IDisposable, ICloneable
         Content = content;
         Priority = 0;
         ObjectManager.Instance.AddObject(this);
-        children = new List<Note>();
+        Children = new List<Note>();
     }
 
     public Note()
@@ -109,7 +119,7 @@ public class Note : IDisposable, ICloneable
         Title = string.Empty;
         Content = string.Empty;
         Priority = 0;
-        children = new List<Note>();
+        Children = new List<Note>();
     }
 
     public Note(Note note)
@@ -120,7 +130,7 @@ public class Note : IDisposable, ICloneable
         Title = note.Title;
         Content = note.Content;
         ObjectManager.Instance.AddObject(this);
-        children = new List<Note>();
+        Children = new List<Note>();
     }
     
     public override string ToString()
