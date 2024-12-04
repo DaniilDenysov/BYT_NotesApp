@@ -37,16 +37,16 @@ public class SerializationTests
         Assert.Equal(serializedNote.Title, deserializedNote.Title);
     }
 
-/*    [Fact]
+    [Fact]
     public void Serialization_Deserialization_Tag_Test()
     {
         string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "test.xml");
-        
+
         if (File.Exists(path))
         {
             File.Delete(path);
         }
-        
+
         Tag serializedTag = new Tag("SampleTag", "A sample tag for testing", Guid.NewGuid().ToString());
         SerializationUtility.Serialize(serializedTag, path);
         Assert.True(File.Exists(path));
@@ -55,7 +55,7 @@ public class SerializationTests
         Assert.Equal(serializedTag.Guid, deserializedTag.Guid);
         Assert.Equal(serializedTag.Name, deserializedTag.Name);
         Assert.Equal(serializedTag.Description, deserializedTag.Description);
-    }*/
+    }
 
     [Fact]
     public void Serialization_Deserialization_NotesCategory_Test()
@@ -87,42 +87,42 @@ public class SerializationTests
             Assert.True(serializedNotesCategory.Items[i] == deserializedNotesCategory.Items[i]);
         }
     }
-    
-   /* [Fact]
+
+    [Fact]
     public void Serialization_Deserialization_TagsCategory_Test()
     {
         string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "tags_test.xml");
-        
+
         if (File.Exists(path))
         {
             File.Delete(path);
         }
-        
+
         Tag tag1 = new Tag("Tag1", "Description1", Guid.NewGuid().ToString());
         Tag tag2 = new Tag("Tag2", "Description2", Guid.NewGuid().ToString());
-        
+
         TagsCategory serializedTagsCategory = new TagsCategory("Category1", "First tag category");
         serializedTagsCategory.Add(tag1);
         serializedTagsCategory.Add(tag2);
 
         SerializationUtility.Serialize(serializedTagsCategory, path);
         Assert.True(File.Exists(path));
-        
+
         TagsCategory deserializedTagsCategory = SerializationUtility.Deserialize<TagsCategory>(path);
-        
+
         Assert.Equal(serializedTagsCategory.Guid, deserializedTagsCategory.Guid);
         Assert.Equal(serializedTagsCategory.Title, deserializedTagsCategory.Title);
         Assert.Equal(serializedTagsCategory.Description, deserializedTagsCategory.Description);
         Assert.Equal(serializedTagsCategory.Items.Count, deserializedTagsCategory.Items.Count);
-        
-        for (int i = 0; i < Math.Max(serializedTagsCategory.Items.Count,deserializedTagsCategory.Items.Count); i++)
+
+        for (int i = 0; i < Math.Max(serializedTagsCategory.Items.Count, deserializedTagsCategory.Items.Count); i++)
         {
             Assert.True(serializedTagsCategory.Items[i] == deserializedTagsCategory.Items[i]);
         }
-    }*/
+    }
 
 
-    
+
     [Fact]
     public void SaveAll_LoadAll_Test()
     {

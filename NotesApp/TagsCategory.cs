@@ -3,7 +3,7 @@ namespace NotesApp;
 public class TagsCategory : Category<Tag>, IDisposable
 {
 
-    public List<Tag> _tags { get; private set; }
+    public List<Tag> _tags { get; set; }
 
     public void AddTag(Tag tag)
     {

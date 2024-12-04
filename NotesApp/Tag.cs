@@ -8,7 +8,7 @@ public class Tag : IDisposable
     public string Name { get;  set; }
     public string? Description { get;  set; }
 
-    public List<TagsCategory> Categories { get; private set; }
+    public List<TagsCategory> Categories { get; set; }
 
     public void AddCategory(TagsCategory category)
     {
