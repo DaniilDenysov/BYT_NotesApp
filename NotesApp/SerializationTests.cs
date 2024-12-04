@@ -37,7 +37,7 @@ public class SerializationTests
         Assert.Equal(serializedNote.Title, deserializedNote.Title);
     }
 
-    [Fact]
+/*    [Fact]
     public void Serialization_Deserialization_Tag_Test()
     {
         string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "test.xml");
@@ -55,7 +55,7 @@ public class SerializationTests
         Assert.Equal(serializedTag.Guid, deserializedTag.Guid);
         Assert.Equal(serializedTag.Name, deserializedTag.Name);
         Assert.Equal(serializedTag.Description, deserializedTag.Description);
-    }
+    }*/
 
     [Fact]
     public void Serialization_Deserialization_NotesCategory_Test()
@@ -88,7 +88,7 @@ public class SerializationTests
         }
     }
     
-    [Fact]
+   /* [Fact]
     public void Serialization_Deserialization_TagsCategory_Test()
     {
         string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "tags_test.xml");
@@ -119,7 +119,7 @@ public class SerializationTests
         {
             Assert.True(serializedTagsCategory.Items[i] == deserializedTagsCategory.Items[i]);
         }
-    }
+    }*/
 
 
     

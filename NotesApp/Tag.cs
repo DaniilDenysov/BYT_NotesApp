@@ -1,3 +1,5 @@
+using System.Linq;
+
 namespace NotesApp;
 
 public class Tag : IDisposable
@@ -6,8 +8,35 @@ public class Tag : IDisposable
     public string Name { get;  set; }
     public string? Description { get;  set; }
 
+    public List<TagsCategory> Categories { get; private set; }
+
+    public void AddCategory(TagsCategory category)
+    {
+        if (category == null)
+            throw new ArgumentNullException(nameof(category));
+        if (category._tags.Contains(this))
+            throw new InvalidOperationException("This category already exists");
+        if (Categories.Contains(category))
+            throw new InvalidOperationException("This tag already exists");
+        Categories.Add(category);
+        category._tags.Add(this);
+    }
+
+    public void RemoveCategory(TagsCategory category)
+    {
+        if (category == null)
+            throw new ArgumentNullException(nameof(category));
+        if (!category._tags.Contains(this))
+            throw new InvalidOperationException("This category already exists");
+        if (!Categories.Contains(category))
+            throw new InvalidOperationException("This tag already exists");
+        category._tags.Remove(this);
+        Categories.Remove(category);
+    }
+
     public Tag(string name, string description = "", string guid = "")
     {
+        Categories = new List<TagsCategory>();
         Guid = guid == "" ? System.Guid.NewGuid().ToString() : guid;
         Name = name;
         Description = description;

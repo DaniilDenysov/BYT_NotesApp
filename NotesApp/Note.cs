@@ -10,8 +10,8 @@ public class Note : IDisposable, ICloneable
 
     public string Title { get; set; }
     public string? Content { get; set; }
-    public Note Parent { get; private set; }
-    public List<Note> Children { get; private set; }
+    public Note Parent { get; set; }
+    public List<Note> Children { get; set; }
 
     private DateTime creationDate;
     private DateTime lastModificationDate;
