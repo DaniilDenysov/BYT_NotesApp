@@ -37,11 +37,13 @@ public class TagsCategory : Category<Tag>, IDisposable
 
     public TagsCategory() : base(string.Empty) 
     {
+        _tags = new List<Tag>();
         ObjectManager.Instance.AddObject(this);
     }
 
     public TagsCategory(Category<Tag> category) : base(category)
     {
+        _tags = new List<Tag>();
         ObjectManager.Instance.AddObject(this);
     }
 

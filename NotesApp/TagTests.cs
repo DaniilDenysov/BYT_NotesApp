@@ -76,4 +76,15 @@ public class TagTests
         IReadOnlyList<Object> objects = ObjectManager.Instance.GetAllData();
         Assert.Empty(objects);
     }
+
+    [Fact]
+    public void CategoryAdded()
+    { 
+        TagsCategory category = new TagsCategory();
+        Tag t = new Tag();
+        
+        t.AddCategory(category);
+
+        Assert.Contains(category, t.Categories);
+    } 
 }

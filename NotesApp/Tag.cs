@@ -46,6 +46,7 @@ public class Tag : IDisposable
 
     public Tag()
     {
+        Categories = new List<TagsCategory>();
         Guid = System.Guid.NewGuid().ToString();
         Name = string.Empty;
         Description = string.Empty;
@@ -53,6 +54,7 @@ public class Tag : IDisposable
 
     public Tag(Tag tag)
     {
+        Categories = new List<TagsCategory>();
         Guid = tag.Guid;
         Name = tag.Name;
         Description = tag.Description;
