@@ -168,5 +168,64 @@ public class CategoryTests
         });
     }
 
-   
+    [Fact]
+    public void AddTag_ShouldAddTagToCategory()
+    {
+        var tag = new Tag();
+        var category = new TagsCategory();
+
+        category.AddTag(tag);
+
+        Assert.Contains(tag, category._tags);
+        Assert.Contains(category, tag.Categories);
+    }
+
+    [Fact]
+    public void AddTag_ShouldThrow_WhenTagIsNull()
+    {
+        var category = new TagsCategory();
+
+        Assert.Throws<ArgumentNullException>(() => category.AddTag(null));
+    }
+
+    [Fact]
+    public void AddTag_ShouldThrow_WhenTagAlreadyAdded()
+    {
+        var tag = new Tag();
+        var category = new TagsCategory();
+
+        category.AddTag(tag);
+
+        Assert.Throws<InvalidOperationException>(() => category.AddTag(tag));
+    }
+
+    [Fact]
+    public void RemoveTag_ShouldRemoveTagFromCategory()
+    {
+        var tag = new Tag();
+        var category = new TagsCategory();
+
+        category.AddTag(tag);
+        category.RemoveTag(tag);
+
+        Assert.DoesNotContain(tag, category._tags);
+        Assert.DoesNotContain(category, tag.Categories);
+    }
+
+    [Fact]
+    public void RemoveTag_ShouldThrow_WhenTagIsNull()
+    {
+        var category = new TagsCategory();
+
+        Assert.Throws<ArgumentNullException>(() => category.RemoveTag(null));
+    }
+
+    [Fact]
+    public void RemoveTag_ShouldThrow_WhenTagNotInCategory()
+    {
+        var tag = new Tag();
+        var category = new TagsCategory();
+
+        Assert.Throws<InvalidOperationException>(() => category.RemoveTag(tag));
+    }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj": {}
+    "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\TestProject1\\TestProject1\\TestProject1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj": {
+    "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\TestProject1\\TestProject1\\TestProject1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj",
-        "projectName": "NotesApp",
-        "projectPath": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj",
+        "projectUniqueName": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\TestProject1\\TestProject1\\TestProject1.csproj",
+        "projectName": "TestProject1",
+        "projectPath": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\TestProject1\\TestProject1\\TestProject1.csproj",
         "packagesPath": "C:\\Users\\Midori no Hikari\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Midori no Hikari\\Source\\Repos\\BYT_NotesApp\\NotesApp\\obj\\",
+        "outputPath": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\TestProject1\\TestProject1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Midori no Hikari\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,27 +47,23 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.11.1, )"
+              "version": "[17.8.0, )"
             },
-            "xunit": {
+            "NUnit": {
               "target": "Package",
-              "version": "[2.9.2, )"
+              "version": "[3.14.0, )"
             },
-            "xunit.core": {
+            "NUnit.Analyzers": {
               "target": "Package",
-              "version": "[2.9.2, )"
+              "version": "[3.9.0, )"
             },
-            "xunit.runner.console": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[2.9.2, )"
+              "version": "[4.5.0, )"
             },
-            "xunit.runner.visualstudio": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "coverlet.collector": {
               "target": "Package",
-              "version": "[2.8.2, )"
+              "version": "[6.0.0, )"
             }
           },
           "imports": [

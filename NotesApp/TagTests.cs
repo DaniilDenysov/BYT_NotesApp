@@ -10,7 +10,7 @@ public class TagTests
         Tag tag1 = new Tag();
         Tag tag2 = new Tag("Tag to test", "Teest", "t");
         Tag tag3 = new Tag();
-       
+
         Assert.True(tag2.Name == "Tag to test");
         Assert.True(tag2.Description == "Teest");
         Assert.True(tag2.Guid == "t");
@@ -18,8 +18,9 @@ public class TagTests
     }
 
     [Fact]
-    public void TagSet() {
-        Tag tag1 = new Tag();   
+    public void TagSet()
+    {
+        Tag tag1 = new Tag();
         tag1.Name = "Test";
         tag1.Description = "Desc";
         tag1.Guid = "t";
@@ -46,14 +47,15 @@ public class TagTests
     }
 
     [Fact]
-    public void TagNotEquals() {
+    public void TagNotEquals()
+    {
         Tag tag1 = new Tag();
         Tag tag2 = new Tag("Tag to test", "Teest", "t");
         Assert.True(tag1 != tag2);
     }
 
     [Fact]
-   public void TagClone()
+    public void TagClone()
     {
         Tag tag = new Tag("Name", "Desc", "Guid");
         Tag clone = tag.Clone();
@@ -79,12 +81,61 @@ public class TagTests
 
     [Fact]
     public void CategoryAdded()
-    { 
+    {
         TagsCategory category = new TagsCategory();
         Tag t = new Tag();
-        
+
         t.AddCategory(category);
 
         Assert.Contains(category, t.Categories);
-    } 
+    }
+
+    [Fact]
+    public void AddCategory_ShouldThrow_WhenCategoryIsNull()
+    {
+        var tag = new Tag();
+
+        Assert.Throws<ArgumentNullException>(() => tag.AddCategory(null));
+    }
+
+    [Fact]
+    public void AddCategory_ShouldThrow_WhenCategoryAlreadyAdded()
+    {
+        var tag = new Tag();
+        var category = new TagsCategory();
+
+        tag.AddCategory(category);
+
+        Assert.Throws<InvalidOperationException>(() => tag.AddCategory(category));
+    }
+
+    [Fact]
+    public void RemoveCategory_ShouldRemoveCategoryFromTag()
+    {
+        var tag = new Tag();
+        var category = new TagsCategory();
+
+        tag.AddCategory(category);
+        tag.RemoveCategory(category);
+
+        Assert.DoesNotContain(category, tag.Categories);
+        Assert.DoesNotContain(tag, category._tags);
+    }
+
+    [Fact]
+    public void RemoveCategory_ShouldThrow_WhenCategoryIsNull()
+    {
+        var tag = new Tag();
+
+        Assert.Throws<ArgumentNullException>(() => tag.RemoveCategory(null));
+    }
+
+    [Fact]
+    public void RemoveCategory_ShouldThrow_WhenCategoryNotInTag()
+    {
+        var tag = new Tag();
+        var category = new TagsCategory();
+
+        Assert.Throws<InvalidOperationException>(() => tag.RemoveCategory(category));
+    }
 }
