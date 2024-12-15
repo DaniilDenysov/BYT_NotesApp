@@ -2,6 +2,26 @@ namespace NotesApp;
 
 public class NotesCategory : Category<Note>, IDisposable
 {
+    public override void Add(Note item)
+    {
+        base.Add(item);
+        item.Category = this;
+    }
+
+    public override void Remove(Note item)
+    {
+        base.Remove(item);
+        item.Category = default;
+    }
+
+    public override void DeleteCategory()
+    {
+        foreach(var v in Items)
+            v.Dispose();
+        this.Dispose();
+    }
+
+
     public NotesCategory(string title, string description = "") : base(title, description)
     {
         ObjectManager.Instance.AddObject(this);

@@ -50,4 +50,9 @@ public abstract class Category<T>
     }
 
     public virtual List<T> GetItems() => Items;
+
+    public virtual void DeleteCategory()
+    {
+        Items.Clear();
+    }
 }

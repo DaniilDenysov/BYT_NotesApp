@@ -16,6 +16,9 @@ public class Note : IDisposable, ICloneable
     private DateTime creationDate;
     private DateTime lastModificationDate;
 
+    public NotesCategory Category { get; set; }
+    public QuickAccessCategory QuickCategory { get; set; }
+
 
     public void AddChild(Note child)
     {
@@ -109,6 +112,7 @@ public class Note : IDisposable, ICloneable
         Priority = 0;
         ObjectManager.Instance.AddObject(this);
         Children = new List<Note>();
+        Category = default;
     }
 
     public Note()
@@ -120,6 +124,7 @@ public class Note : IDisposable, ICloneable
         Content = string.Empty;
         Priority = 0;
         Children = new List<Note>();
+        Category = default;
     }
 
     public Note(Note note)
@@ -131,6 +136,7 @@ public class Note : IDisposable, ICloneable
         Content = note.Content;
         ObjectManager.Instance.AddObject(this);
         Children = new List<Note>();
+        Category = default;
     }
     
     public override string ToString()

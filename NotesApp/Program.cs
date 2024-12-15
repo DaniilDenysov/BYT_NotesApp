@@ -16,33 +16,33 @@ foreach (var item in list) Console.WriteLine(item);
 SerializationUtility.SaveAll(path);
 Console.Read();*/
 
-/*Note parentNote = new Note("Parent");
-Note childNote1 = new Note("child1");
-Note childNote2 = new Note("child2");
+Note parentNote = new Note("Parent N");
+Note childNote1 = new Note("child1 N");
+Note childNote2 = new Note("child2 N");
 
-parentNote.AddChild(childNote1);
-childNote2.SetParent(parentNote);
+NotesCategory parentCategory = new NotesCategory("Parents C");
+NotesCategory childCategory = new NotesCategory("Children C");
 
-
-parentNote.DisplayHierarchy();
-
-childNote1.RemoveParent();
-
-parentNote.DisplayHierarchy();*/
-
-TagsCategory t1 = new TagsCategory("Parent");
-Tag t2 = new Tag("Child1");
-Tag t3 = new Tag("Child2");
-
-t1.AddTag(t2);
-t3.AddCategory(t1);
+parentCategory.Add(parentNote);
+childCategory.Add(childNote1);
+childCategory.Add(childNote2);
 
 
-List<Tag> tags = t1._tags;
-List<TagsCategory> tc1 = t2.Categories;
-List<TagsCategory> tc2 = t3.Categories;
+Console.WriteLine("Parent Category");
+foreach (Note note in parentCategory.Items)
+{
+    Console.WriteLine(note.Title);
+}
+Console.WriteLine();
 
-Console.WriteLine(tags[0]);
-Console.WriteLine(tags[1]);
-Console.WriteLine(tc1[0]);
-Console.WriteLine(tc2[0]);
+Console.WriteLine("Child Category");
+foreach (Note note in childCategory.Items)
+{
+    Console.WriteLine(note.Title);
+}
+
+Console.WriteLine();
+
+childCategory.Remove(childNote1);
+
+Console.WriteLine();
