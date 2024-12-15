@@ -19,6 +19,33 @@ public class Note : IDisposable, ICloneable
     public NotesCategory Category { get; set; }
     public QuickAccessCategory QuickCategory { get; set; }
 
+    public List<string> files { get; set; }
+
+    public List<NoteTag> tags { get; set; }
+
+    public void AddTag(Tag tag)
+    {
+        tags.Add(new NoteTag(this, tag));
+    }
+
+    public void RemoveTag(Tag tag)
+    {
+        NoteTag n = null;
+        foreach(NoteTag nt in tags)
+        {
+            if(nt.tag == tag)
+            {
+                n = nt;
+                break;
+            }
+        }
+        tags.Remove(n);
+    }
+
+    public void AttachFile(string file)
+    {
+        files.Add(file);
+    } 
 
     public void AddChild(Note child)
     {
