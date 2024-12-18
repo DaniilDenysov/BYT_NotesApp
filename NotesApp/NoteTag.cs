@@ -8,6 +8,10 @@ public class NoteTag
 
     public NoteTag(Note note, Tag tag)
     {
+        if(note == default || tag == default)  
+            throw new ArgumentNullException("One of the arguments is null");
+        this.note = note;
+        this.tag = tag;
         addedTime = DateTime.Now;
     }
 }

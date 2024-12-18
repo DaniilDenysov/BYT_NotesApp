@@ -9,6 +9,12 @@ public class Tag : IDisposable
     public string? Description { get;  set; }
 
     public List<TagsCategory> Categories { get; set; }
+    public List<NoteTag> NoteTags { get; set; }
+
+    public void AddNoteTag(Note note)
+    {
+        NoteTags.Add(new NoteTag(note, this));
+    }
 
     public void AddCategory(TagsCategory category)
     {
