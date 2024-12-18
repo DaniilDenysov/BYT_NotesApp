@@ -16,7 +16,7 @@ foreach (var item in list) Console.WriteLine(item);
 SerializationUtility.SaveAll(path);
 Console.Read();*/
 
-Note parentNote = new Note("Parent N");
+/*Note parentNote = new Note("Parent N");
 Note childNote1 = new Note("child1 N");
 Note childNote2 = new Note("child2 N");
 
@@ -45,4 +45,10 @@ Console.WriteLine();
 
 childCategory.Remove(childNote1);
 
-Console.WriteLine();
+Console.WriteLine();*/
+
+Tag tag = new Tag("Tag1");
+
+
+var exception = Assert.Throws<ArgumentNullException>(() => new NoteTag(null, tag));
+Assert.Equal("One of the arguments is null", exception.ParamName);
