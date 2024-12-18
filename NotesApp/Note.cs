@@ -23,6 +23,22 @@ public class Note : IDisposable, ICloneable
 
     public List<NoteTag> tags { get; set; }
 
+    public Status CurrentStatus = Status.Accessible;
+    
+    public enum Status
+    {
+        Accessible,
+        Deleted
+    }
+
+    public int Age 
+    {
+        get
+        {
+            return (DateTime.Now - creationDate).Days / 365;
+        }
+    }
+
     public void AddTag(Tag tag)
     {
         tags.Add(new NoteTag(this, tag));
