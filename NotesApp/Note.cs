@@ -19,7 +19,7 @@ public class Note : IDisposable, ICloneable
     public NotesCategory Category { get; set; }
     public QuickAccessCategory QuickCategory { get; set; }
 
-    public List<string> files { get; set; }
+    public List<string> files;
 
     public List<NoteTag> tags { get; set; }
 
@@ -44,6 +44,11 @@ public class Note : IDisposable, ICloneable
         tags.Add(new NoteTag(this, tag));
     }
 
+    public virtual List<string> GetFiles()
+    {
+        return files;
+    }
+    
     public void RemoveTag(Tag tag)
     {
         NoteTag n = null;
