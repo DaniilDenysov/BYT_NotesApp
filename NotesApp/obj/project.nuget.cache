@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IS7amQizYQSmsu8ECWzHcUORHGwhEgjyrY5wRBpwHZpmkV+ZPUbOVtjeDCeF0i3Afe16cdMXsLTA5tWXzKD0IQ==",
+  "dgSpecHash": "YTThLockDr1ga9q447GresqSsJURNJBellPsAqUa2B1IySwBn1tNXY5aQkusBOJoPJmdeWVuShAGJOcHKVXRQA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Aleks\\Source\\Repos\\BYT_NotesApp\\NotesApp\\NotesApp.csproj",
   "expectedPackageFiles": [
@@ -18,7 +18,14 @@
     "C:\\Users\\Aleks\\.nuget\\packages\\xunit.extensibility.core\\2.9.2\\xunit.extensibility.core.2.9.2.nupkg.sha512",
     "C:\\Users\\Aleks\\.nuget\\packages\\xunit.extensibility.execution\\2.9.2\\xunit.extensibility.execution.2.9.2.nupkg.sha512",
     "C:\\Users\\Aleks\\.nuget\\packages\\xunit.runner.console\\2.9.2\\xunit.runner.console.2.9.2.nupkg.sha512",
-    "C:\\Users\\Aleks\\.nuget\\packages\\xunit.runner.visualstudio\\2.8.2\\xunit.runner.visualstudio.2.8.2.nupkg.sha512"
+    "C:\\Users\\Aleks\\.nuget\\packages\\xunit.runner.visualstudio\\3.0.0\\xunit.runner.visualstudio.3.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Aleks\\Source\\Repos\\BYT_NotesApp\\NotesApp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
