@@ -13,7 +13,9 @@ public class Tag : IDisposable
 
     public void AddNoteTag(Note note)
     {
-        NoteTags.Add(new NoteTag(note, this));
+        if(note == null)
+            throw new ArgumentNullException(nameof(note));
+        note.AddTag(this);
     }
 
     public void AddCategory(TagsCategory category)

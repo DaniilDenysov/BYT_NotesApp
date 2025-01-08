@@ -41,7 +41,15 @@ public class Note : IDisposable, ICloneable
 
     public void AddTag(Tag tag)
     {
-        tags.Add(new NoteTag(this, tag));
+        if(tag == null)
+            throw new ArgumentNullException(nameof(tag));
+        foreach (var item in tags) {
+            if (item.tag == tag)
+                throw new ArgumentException("Such tag already exists");
+        }
+        NoteTag n = new NoteTag(this, tag);
+        tags.Add(n);
+        tag.NoteTags.Add(n);
     }
 
     public virtual List<string> GetFiles()

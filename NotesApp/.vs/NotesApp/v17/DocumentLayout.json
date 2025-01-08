@@ -1,25 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\s26728\\source\\repos\\BYT_NotesApp\\NotesApp\\",
+  "WorkspaceRootPath": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\s26728\\source\\repos\\byt_notesapp\\notesapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\s26728\\source\\repos\\byt_notesapp\\notesapp\\notetagtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:notetagtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\s26728\\source\\repos\\byt_notesapp\\notesapp\\notetag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:notetag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\s26728\\source\\repos\\byt_notesapp\\notesapp\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\midori no hikari\\source\\repos\\byt_notesapp\\notesapp\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\s26728\\source\\repos\\byt_notesapp\\notesapp\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\midori no hikari\\source\\repos\\byt_notesapp\\notesapp\\notetag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:notetag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|c:\\users\\midori no hikari\\source\\repos\\byt_notesapp\\notesapp\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E7CC03A-0776-4BB2-9FC5-50E648C85BA3}|NotesApp.csproj|solutionrelative:note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -42,71 +34,49 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\s26728\\source\\repos\\BYT_NotesApp\\NotesApp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\s26728\\source\\repos\\BYT_NotesApp\\NotesApp\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAABcAAAAAAAAAAADwvzIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T08:48:31.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "NoteTagTests.cs",
-              "DocumentMoniker": "C:\\Users\\s26728\\source\\repos\\BYT_NotesApp\\NotesApp\\NoteTagTests.cs",
-              "RelativeDocumentMoniker": "NoteTagTests.cs",
-              "ToolTip": "C:\\Users\\s26728\\source\\repos\\BYT_NotesApp\\NotesApp\\NoteTagTests.cs*",
-              "RelativeToolTip": "NoteTagTests.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABKAAAAAAAAAA==",
+              "Title": "NoteTag.cs",
+              "DocumentMoniker": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\NoteTag.cs",
+              "RelativeDocumentMoniker": "NoteTag.cs",
+              "ToolTip": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\NoteTag.cs",
+              "RelativeToolTip": "NoteTag.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T08:45:55.979Z",
+              "WhenOpened": "2025-01-08T10:11:15.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Tag.cs",
-              "DocumentMoniker": "C:\\Users\\s26728\\source\\repos\\BYT_NotesApp\\NotesApp\\Tag.cs",
+              "DocumentMoniker": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\Tag.cs",
               "RelativeDocumentMoniker": "Tag.cs",
-              "ToolTip": "C:\\Users\\s26728\\source\\repos\\BYT_NotesApp\\NotesApp\\Tag.cs",
+              "ToolTip": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\Tag.cs",
               "RelativeToolTip": "Tag.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAqwGMAAAAEAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T08:43:34.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Note.cs",
-              "DocumentMoniker": "C:\\Users\\s26728\\source\\repos\\BYT_NotesApp\\NotesApp\\Note.cs",
-              "RelativeDocumentMoniker": "Note.cs",
-              "ToolTip": "C:\\Users\\s26728\\source\\repos\\BYT_NotesApp\\NotesApp\\Note.cs",
-              "RelativeToolTip": "Note.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAADwv9kAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T08:41:59.185Z",
+              "WhenOpened": "2025-01-08T10:09:07.086Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "NoteTag.cs",
-              "DocumentMoniker": "C:\\Users\\s26728\\source\\repos\\BYT_NotesApp\\NotesApp\\NoteTag.cs",
-              "RelativeDocumentMoniker": "NoteTag.cs",
-              "ToolTip": "C:\\Users\\s26728\\source\\repos\\BYT_NotesApp\\NotesApp\\NoteTag.cs",
-              "RelativeToolTip": "NoteTag.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
+              "Title": "Note.cs",
+              "DocumentMoniker": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\Note.cs",
+              "RelativeDocumentMoniker": "Note.cs",
+              "ToolTip": "C:\\Users\\Midori no Hikari\\source\\repos\\BYT_NotesApp\\NotesApp\\Note.cs",
+              "RelativeToolTip": "Note.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAwwDMAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T08:33:11.235Z",
+              "WhenOpened": "2025-01-07T16:07:56.675Z",
               "EditorCaption": ""
             }
           ]

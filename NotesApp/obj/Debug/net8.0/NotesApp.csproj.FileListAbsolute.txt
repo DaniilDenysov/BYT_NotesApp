@@ -223,8 +223,6 @@ C:\Users\Midori no Hikari\Source\Repos\BYT_NotesApp\NotesApp\bin\Debug\net8.0\zh
 C:\Users\Midori no Hikari\Source\Repos\BYT_NotesApp\NotesApp\obj\Debug\net8.0\NotesApp.csproj.AssemblyReference.cache
 C:\Users\Midori no Hikari\Source\Repos\BYT_NotesApp\NotesApp\obj\Debug\net8.0\NotesApp.csproj.Up2Date
 C:\Users\Midori no Hikari\source\repos\BYT_NotesApp\NotesApp\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
-C:\Users\Midori no Hikari\source\repos\BYT_NotesApp\NotesApp\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
-C:\Users\Midori no Hikari\source\repos\BYT_NotesApp\NotesApp\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
 C:\Users\s26728\Source\Repos\BYT_NotesApp\NotesApp\bin\Debug\net8.0\testhost.exe
 C:\Users\s26728\Source\Repos\BYT_NotesApp\NotesApp\bin\Debug\net8.0\testhost.dll
 C:\Users\s26728\Source\Repos\BYT_NotesApp\NotesApp\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
