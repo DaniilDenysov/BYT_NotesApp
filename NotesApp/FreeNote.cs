@@ -6,4 +6,8 @@ public class FreeNote : Note
     {
         return base.GetFiles().GetRange(0,1);
     }
+
+    public FreeNote(Note note) : base(note)
+    {
+    }
 }
